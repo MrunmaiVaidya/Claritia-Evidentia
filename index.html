@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Independent forensic document and fingerprint expertise by Mrunmai S. Vaidya. Forensic examination, freelance services, and online consultation.">
+    <meta name="description" content="Independent forensic document and fingerprint expertise by Mrunmai S. Vaidya. Forensic examination and online consultation.">
     <meta name="theme-color" content="#101216">
     <title>Mrunmai S. Vaidya | Forensic Document & Fingerprint Expert</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -125,6 +125,7 @@
         .brand-name { font-family: "Playfair Display", Georgia, serif; font-weight: 700; letter-spacing: .035em; }
         .brand-title { font-family: "Playfair Display", Georgia, serif; font-style: italic; letter-spacing: .01em; }
         .desktop-nav {
+            justify-self: end;
             min-height: 3.4rem;
             border-left: 1px solid rgba(215, 219, 224, .45);
             padding-left: clamp(1.2rem, 3vw, 3.2rem);
@@ -132,6 +133,12 @@
             font-size: .875rem !important;
             font-weight: 500;
         }
+        .site-header .flex.justify-between {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+        }
+        .site-header .brand-lockup { justify-self: center; }
+        .site-header .mobile-menu { justify-self: end; }
         .desktop-nav a, .mobile-nav a {
             color: #c7cbd1;
             transition: color .2s ease;
@@ -305,6 +312,7 @@
             max-width: 1160px;
         }
         #contact .max-w-4xl { max-width: 760px; }
+        #contact .contact-container { max-width: 1160px; }
         #about .about-panel, #freelance .service-panel, #consultation .consult-panel,
         #instrumentation .legal-panel {
             background: var(--surface-raised) !important;
@@ -595,11 +603,16 @@
         #services h3, #services h4, #methodology h3, #methodology h4,
         #about h2, #about h3, #freelance h2, #freelance h3, #consultation h2, #consultation h3,
         #instrumentation h3, #instrumentation h4, #guidelines h3, #contact h2, #contact h3 { color: #fff !important; }
-        #instrumentation .bg-slate-850 {
+        #instrumentation .legal-panel {
+            width: min(100%, 760px);
+            margin-inline: auto;
             background: #202329 !important;
             border-color: var(--line) !important;
             border-radius: .8rem !important;
         }
+        #instrumentation .legal-panel > p,
+        #instrumentation .legal-panel li span { text-align: justify; }
+        #instrumentation .legal-panel h4 { text-align: left; }
         #about .about-stat { border-left: 1px solid var(--line); }
         #freelance .service-panel { height: 100%; padding: 1.6rem; }
         #consultation .silver-button, #freelance .silver-button { text-decoration: none; }
@@ -615,6 +628,40 @@
             border-radius: .8rem !important;
             box-shadow: 0 20px 60px rgba(0, 0, 0, .22) !important;
         }
+        .contact-grid {
+            display: grid;
+            gap: 1.5rem;
+            align-items: stretch;
+        }
+        .contact-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: clamp(1.5rem, 3vw, 2.25rem);
+            border: 1px solid var(--line);
+            border-radius: .8rem;
+            background: linear-gradient(145deg, #1d2026, #17191e 72%);
+            box-shadow: 0 18px 55px rgba(0, 0, 0, .2);
+        }
+        .contact-card h3 {
+            margin-bottom: .85rem;
+            color: #fff;
+            font: 600 1.5rem/1.35 "Playfair Display", Georgia, serif;
+        }
+        .contact-intro { max-width: 34rem; color: var(--muted); font-size: .9375rem; line-height: 1.7; }
+        .contact-person { padding: 1.25rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+        .contact-person-name { color: #fff; font: 600 1.2rem/1.4 "Playfair Display", Georgia, serif; }
+        .contact-person-title, .contact-location { color: var(--muted); font-size: .875rem; line-height: 1.65; }
+        .contact-location { display: flex; align-items: flex-start; gap: .65rem; margin-top: .75rem; }
+        .contact-location i, .contact-detail i { flex: 0 0 auto; margin-top: .2rem; color: var(--silver); }
+        .contact-detail-list { display: grid; gap: .85rem; margin-top: 1.2rem; }
+        .contact-detail { display: flex; align-items: flex-start; gap: .7rem; color: #e2e4e8; font-size: .9375rem; overflow-wrap: anywhere; }
+        .contact-detail a { color: inherit; text-decoration: none; text-underline-offset: .2rem; }
+        .contact-detail a:hover { color: #fff; text-decoration: underline; text-decoration-color: var(--silver); }
+        .contact-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+        .contact-actions .silver-button { min-height: 3rem; text-decoration: none; }
+        .contact-actions .silver-button-outline i { color: var(--silver); }
         #contact label, #contact legend { color: #e2e4e8 !important; }
         #contact input:not([type="checkbox"]):not([type="file"]), #contact select, #contact textarea {
             background: #111318 !important;
@@ -633,6 +680,10 @@
 
         @media (max-width: 1279px) {
             .desktop-nav { font-size: .8125rem !important; gap: 1.15rem; }
+        }
+        @media (min-width: 1280px) {
+            .site-header .flex.justify-between { gap: 1.5rem; }
+            .desktop-nav { padding-left: 1.25rem; }
         }
         @media (max-width: 1023px) {
             .desktop-nav { display: none; }
@@ -668,6 +719,12 @@
             .format-grid { grid-template-columns: 1fr; }
             .format-card { min-height: 8rem; }
             .service-dialog-header h3 { font-size: 1.25rem; }
+            #contact form { padding: 1.25rem !important; }
+            .contact-actions { flex-direction: column; }
+            .contact-actions .silver-button { width: 100%; }
+        }
+        @media (min-width: 1024px) {
+            .contact-grid { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 2rem; }
         }
         @media (min-width: 768px) and (max-width: 1023px) {
             #services .services-grid { gap: 1rem; }
@@ -697,7 +754,6 @@
                     <a href="#home">Home</a>
                     <a href="#about">About Me</a>
                     <a href="#services">Services</a>
-                    <a href="#freelance">Freelance Services</a>
                     <a href="#consultation">Online Consultation</a>
                     <a href="#resources">Resources</a>
                     <a href="#contact">Contact</a>
@@ -711,7 +767,6 @@
                         <a href="#home" class="block rounded px-3 py-2.5 text-sm">Home</a>
                         <a href="#about" class="block rounded px-3 py-2.5 text-sm">About Me</a>
                         <a href="#services" class="block rounded px-3 py-2.5 text-sm">Services</a>
-                        <a href="#freelance" class="block rounded px-3 py-2.5 text-sm">Freelance Services</a>
                         <a href="#consultation" class="block rounded px-3 py-2.5 text-sm">Online Consultation</a>
                         <a href="#resources" class="block rounded px-3 py-2.5 text-sm">Resources</a>
                         <a href="#contact" class="block rounded px-3 py-2.5 text-sm">Contact</a>
@@ -727,7 +782,7 @@
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
             <div class="hero-content">
-            <div class="hero-copy max-w-2xl">
+            <div class="hero-copy max-w-3xl">
                 <p class="hero-kicker mb-5">Independent Forensic Expertise</p>
                 <h1 class="hero-name mb-5">Mrunmai S. Vaidya</h1>
                 <h2 class="hero-title mb-4">Forensic Document & Fingerprint Expert</h2>
@@ -1017,34 +1072,6 @@
         </div>
     </section>
 
-    <!-- Freelance services -->
-    <section id="freelance" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-12 max-w-2xl">
-                <p class="eyebrow mb-3">Independent engagement</p>
-                <h2 class="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">Freelance forensic services</h2>
-                <p class="text-sm leading-7 text-slate-400">Flexible, independent support for legal professionals, organisations, and individuals. Every engagement begins with a discussion of scope, material, and suitability.</p>
-            </div>
-            <div class="grid gap-5 md:grid-cols-3">
-                <article class="service-panel">
-                    <i class="fa-solid fa-file-signature mb-5 text-xl text-slate-300" aria-hidden="true"></i>
-                    <h3 class="mb-3 text-lg font-bold text-white">Document examination</h3>
-                    <p class="text-sm leading-7 text-slate-400">Independent review of questioned handwriting, signatures, alterations, and document features.</p>
-                </article>
-                <article class="service-panel">
-                    <i class="fa-solid fa-fingerprint mb-5 text-xl text-slate-300" aria-hidden="true"></i>
-                    <h3 class="mb-3 text-lg font-bold text-white">Fingerprint expertise</h3>
-                    <p class="text-sm leading-7 text-slate-400">Fingerprint-related examination and advisory support, considered in the context of the available material.</p>
-                </article>
-                <article class="service-panel">
-                    <i class="fa-solid fa-comments mb-5 text-xl text-slate-300" aria-hidden="true"></i>
-                    <h3 class="mb-3 text-lg font-bold text-white">Professional advisory</h3>
-                    <p class="text-sm leading-7 text-slate-400">Case discussions, evidence review, and practical guidance on examination questions and next steps.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
     <!-- Online consultation -->
     <section id="consultation" class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1062,38 +1089,8 @@
     <!-- Lab Instrumentation -->
     <section id="instrumentation" class="py-20 bg-navy-900 text-white border-y border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="eyebrow mb-2">Methods & standards</h2>
-                    <h3 class="text-3xl font-extrabold text-white tracking-tight mb-6">Tools and examination methods</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                        Examination methods are selected to suit each item, with care taken to preserve evidence and support independent review.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex gap-4">
-                            <div class="text-sky-400 text-lg"><i class="fa-solid fa-bolt"></i></div>
-                            <div>
-                                <h4 class="font-semibold text-white text-sm">Video Spectral Comparator (VSC)</h4>
-                                <p class="text-slate-400 text-xs mt-0.5">UV, visible, and IR luminescence for ink differentiation and alteration detection.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="text-sky-400 text-lg"><i class="fa-solid fa-magnifying-glass"></i></div>
-                            <div>
-                                <h4 class="font-semibold text-white text-sm">High-Precision Stereo Zoom Microscopy</h4>
-                                <p class="text-slate-400 text-xs mt-0.5">High-magnification analysis of line crossings, pen lifts, and stroke tremors.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="text-sky-400 text-lg"><i class="fa-solid fa-file-lines"></i></div>
-                            <div>
-                                <h4 class="font-semibold text-white text-sm">Electrostatic Detection Apparatus (ESDA)</h4>
-                                <p class="text-slate-400 text-xs mt-0.5">Non-chemical recovery of latent indentations on multi-page files.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-slate-850 p-8 rounded-xl border border-slate-700 shadow-xl">
+            <div>
+                <div class="legal-panel bg-slate-850 p-8 rounded-xl border border-slate-700 shadow-xl">
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-700 pb-3">
                         <i class="fa-solid fa-scale-balanced mr-2 text-sky-400"></i> Legal framework
                     </h4>
@@ -1114,38 +1111,6 @@
                             <span><strong>Expert testimony:</strong> Available by prior arrangement.</span>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4-Step Process -->
-    <section id="methodology" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-2">Procedural Integrity</h2>
-                <h3 class="text-3xl font-extrabold text-navy-900 tracking-tight">Four-Step Engagement Workflow</h3>
-            </div>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="p-5 border border-gray-100 rounded-lg bg-gray-50">
-                    <div class="text-sky-600 font-bold text-2xl mb-2">01</div>
-                    <h4 class="font-bold text-navy-900 text-sm mb-1">Confidential Intake</h4>
-                    <p class="text-slate-600 text-xs">Submission of case summary & opposing party names for conflict-of-interest clearance.</p>
-                </div>
-                <div class="p-5 border border-gray-100 rounded-lg bg-gray-50">
-                    <div class="text-sky-600 font-bold text-2xl mb-2">02</div>
-                    <h4 class="font-bold text-navy-900 text-sm mb-1">Evidence Transfer</h4>
-                    <p class="text-slate-600 text-xs">Transfer of physical evidence with a documented chain of custody, or submission of high-resolution digital scans.</p>
-                </div>
-                <div class="p-5 border border-gray-100 rounded-lg bg-gray-50">
-                    <div class="text-sky-600 font-bold text-2xl mb-2">03</div>
-                    <h4 class="font-bold text-navy-900 text-sm mb-1">Lab Examination</h4>
-                    <p class="text-slate-600 text-xs">Examination using methods selected for the type of evidence and question.</p>
-                </div>
-                <div class="p-5 border border-gray-100 rounded-lg bg-gray-50">
-                    <div class="text-sky-600 font-bold text-2xl mb-2">04</div>
-                    <h4 class="font-bold text-navy-900 text-sm mb-1">Written findings</h4>
-                    <p class="text-slate-600 text-xs">A clear report with supporting images and conclusions.</p>
                 </div>
             </div>
         </div>
@@ -1173,16 +1138,35 @@
         </div>
     </section>
 
-    <!-- Case Intake Form -->
+    <!-- Contact and enquiry -->
     <section id="contact" class="py-20 bg-gray-50">
-        <div id="intake" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="eyebrow mb-2">Contact</h2>
-                <h3 class="text-3xl font-extrabold tracking-tight">Start a conversation</h3>
-                <p class="mt-2 text-sm text-slate-400">Share a brief outline. We’ll follow up to discuss the evidence and next steps.</p>
+        <div id="intake" class="contact-container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10 max-w-3xl">
+                <p class="eyebrow mb-3">Contact</p>
+                <h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">GET IN TOUCH</h2>
+                <p class="text-sm leading-7 text-slate-400">Have a forensic-related query or require professional assistance? Get in touch to discuss your requirements.</p>
             </div>
 
-            <form id="enquiry-form" method="post" data-endpoint="" class="bg-white p-8 rounded-xl border border-gray-200 shadow-md space-y-6">
+            <div class="contact-grid">
+                <aside class="contact-card" aria-label="Contact details">
+                    <div>
+                        <h3>Mrunmai S. Vaidya</h3>
+                        <div class="contact-person">
+                            <p class="contact-person-title">Forensic Document &amp; Fingerprint Expert</p>
+                            <p class="contact-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Pune, Maharashtra, India</span></p>
+                        </div>
+                        <div class="contact-detail-list">
+                            <p class="contact-detail"><i class="fa-solid fa-phone" aria-hidden="true"></i><span><strong>Phone:</strong> <a href="tel:+918010990254">8010990254</a></span></p>
+                            <p class="contact-detail"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span><strong>Email:</strong> <a href="mailto:mrunmai.vaidya0908@gmail.com">mrunmai.vaidya0908@gmail.com</a></span></p>
+                        </div>
+                    </div>
+                    <div class="contact-actions">
+                        <a class="silver-button" href="tel:+918010990254"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call now</a>
+                        <a class="silver-button silver-button-outline" href="mailto:mrunmai.vaidya0908@gmail.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Send an email</a>
+                    </div>
+                </aside>
+
+            <form id="enquiry-form" action="https://formspree.io/f/xjywbqev" method="post" data-endpoint="https://formspree.io/f/xjywbqev" class="bg-white p-8 rounded-xl border border-gray-200 shadow-md space-y-6">
                 <div class="grid gap-6 md:grid-cols-2">
                     <div>
                         <label for="enquiry-name" class="block text-xs font-bold text-slate-700 uppercase mb-1">Full name *</label>
@@ -1211,7 +1195,8 @@
                             <option>Handwriting &amp; Signature Examination</option>
                             <option>Fingerprint Examination &amp; Comparison</option>
                             <option>Forensic Consultation</option>
-                            <option>PCC &amp; International Fingerprint Card Assistance</option>
+                            <option>Police Clearance Certificate Assistance</option>
+                            <option>International Fingerprint Card Assistance</option>
                         </select>
                     </div>
                     <div id="format-field" hidden>
@@ -1231,11 +1216,12 @@
                     <p class="mt-2 text-xs text-slate-400">Please do not send sensitive evidence or identity documents until a secure process has been agreed.</p>
                 </div>
                 <p id="enquiry-status" class="enquiry-status" role="status" aria-live="polite"></p>
-                <p id="enquiry-connection-note" class="text-xs text-slate-400">Online submission is unavailable until a form endpoint is connected. The form will not claim an enquiry was sent unless the endpoint confirms success.</p>
+                <p id="enquiry-connection-note" class="text-xs text-slate-400">Your enquiry will be sent through Formspree.</p>
                 <button type="submit" class="w-full py-3 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded shadow transition text-sm">
-                    Send enquiry
+                    Submit enquiry
                 </button>
             </form>
+            </div>
         </div>
     </section>
 
@@ -1270,7 +1256,7 @@
             const connectionNote = document.getElementById("enquiry-connection-note");
 
             const updateFormatField = () => {
-                const requiresFormat = serviceSelect.value === "PCC & International Fingerprint Card Assistance";
+                const requiresFormat = serviceSelect.value === "International Fingerprint Card Assistance";
                 formatField.hidden = !requiresFormat;
                 formatSelect.required = false;
                 if (!requiresFormat) formatSelect.value = "";
@@ -1278,11 +1264,13 @@
 
             const populateEnquiry = (trigger) => {
                 if (trigger.dataset.enquiryService) {
-                    serviceSelect.value = trigger.dataset.enquiryService;
+                    serviceSelect.value = trigger.dataset.enquiryService === "PCC & International Fingerprint Card Assistance"
+                        ? (trigger.dataset.enquiryFormat ? "International Fingerprint Card Assistance" : "Police Clearance Certificate Assistance")
+                        : trigger.dataset.enquiryService;
                     updateFormatField();
                 }
                 if (trigger.dataset.enquiryFormat) {
-                    serviceSelect.value = "PCC & International Fingerprint Card Assistance";
+                    serviceSelect.value = "International Fingerprint Card Assistance";
                     updateFormatField();
                     formatSelect.value = trigger.dataset.enquiryFormat;
                 }
@@ -1330,7 +1318,22 @@
                 status.dataset.state = "error";
                 const endpoint = form.dataset.endpoint.trim();
                 if (!endpoint) {
-                    status.textContent = "This enquiry form is not connected to a submission service yet. No enquiry was sent.";
+                    const values = new FormData(form);
+                    const subject = `Website enquiry: ${values.get("service")}`;
+                    const body = [
+                        `Full name: ${values.get("name")}`,
+                        `Email address: ${values.get("email")}`,
+                        `Contact number: ${values.get("phone")}`,
+                        `Country: ${values.get("country")}`,
+                        `Service required: ${values.get("service")}`,
+                        values.get("fingerprint_card_format") ? `Fingerprint card format: ${values.get("fingerprint_card_format")}` : "",
+                        "",
+                        "Brief description:",
+                        String(values.get("message") || "")
+                    ].filter(Boolean).join("\n");
+                    status.dataset.state = "";
+                    status.textContent = "Your email app should open with an enquiry draft. Review it and press Send to complete your enquiry.";
+                    window.location.href = `mailto:mrunmai.vaidya0908@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
                     return;
                 }
 
