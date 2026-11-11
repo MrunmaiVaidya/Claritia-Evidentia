@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Independent forensic examination of questioned documents, signatures, and latent prints.">
+    <title>Forensic Document & Fingerprint Examination</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0F1E36',
+                            900: '#0A1424',
+                            950: '#060B14'
+                        },
+                        slate: {
+                            850: '#1E293B'
+                        },
+                        accent: {
+                            500: '#0284C7',
+                            600: '#0369A1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased selection:bg-accent-500 selection:text-white">
+
+    <!-- Service information bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                    <i class="fa-solid fa-clock mr-1"></i> Urgent requests
+                </span>
+                <span>Contact us early if you have a court deadline.</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-shield-halved text-sky-400 mr-1"></i> Confidential case handling</span>
+                <span><i class="fa-solid fa-scale-balanced text-sky-400 mr-1"></i> Clear chain of custody</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="bg-navy-900 sticky top-0 z-50 border-b border-slate-800 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-gradient-to-br from-accent-500 to-navy-950 flex items-center justify-center text-white text-xl font-bold shadow-md">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-white block">VERITAS FORENSIC</span>
+                        <span class="text-[10px] uppercase tracking-widest text-slate-400 block -mt-1">Document & Biometric Laboratory</span>
+                    </div>
+                </div>
+                <nav aria-label="Main navigation" class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#services" class="hover:text-sky-400 transition-colors">Services</a>
+                    <a href="#instrumentation" class="hover:text-sky-400 transition-colors">Methods</a>
+                    <a href="#methodology" class="hover:text-sky-400 transition-colors">Process</a>
+                    <a href="#guidelines" class="hover:text-sky-400 transition-colors">Evidence handling</a>
+                    <a href="#intake" class="bg-sky-600 hover:bg-sky-500 text-white px-5 py-2.5 rounded text-sm font-semibold transition-all shadow-md">
+                        Contact
+                    </a>
+                </nav>
+                <details class="md:hidden relative">
+                    <summary class="list-none cursor-pointer rounded border border-slate-700 px-3 py-2 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        <span class="sr-only">Open navigation menu</span>
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </summary>
+                    <nav aria-label="Mobile navigation" class="absolute right-0 top-full mt-2 w-52 rounded-lg border border-slate-700 bg-navy-900 p-2 shadow-xl">
+                        <a href="#services" class="block rounded px-3 py-2 text-sm text-slate-200 hover:bg-slate-800">Services</a>
+                        <a href="#instrumentation" class="block rounded px-3 py-2 text-sm text-slate-200 hover:bg-slate-800">Methods</a>
+                        <a href="#methodology" class="block rounded px-3 py-2 text-sm text-slate-200 hover:bg-slate-800">Process</a>
+                        <a href="#guidelines" class="block rounded px-3 py-2 text-sm text-slate-200 hover:bg-slate-800">Evidence handling</a>
+                        <a href="#intake" class="mt-1 block rounded bg-sky-600 px-3 py-2 text-sm font-semibold text-white hover:bg-sky-500">Contact</a>
+                    </nav>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-navy-900 text-white relative py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-microscope"></i> Independent Forensic Examination
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Forensic Document & Fingerprint Examination
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                    Clear, impartial examination of questioned documents, signatures, and latent prints, with careful evidence handling and a documented process.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#intake" class="inline-flex items-center justify-center px-6 py-3.5 rounded bg-sky-600 hover:bg-sky-500 text-white font-semibold transition shadow-lg gap-2">
+                        <i class="fa-solid fa-file-signature"></i> Request an assessment
+                    </a>
+                    <a href="#guidelines" class="inline-flex items-center justify-center px-6 py-3.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold transition gap-2">
+                        <i class="fa-solid fa-box-archive"></i> Evidence handling
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Credibility Strip -->
+    <section class="bg-white border-y border-gray-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x-0 md:divide-x divide-gray-100">
+                <div class="p-2">
+                    <div class="text-sky-600 font-bold text-lg mb-1"><i class="fa-solid fa-microscope mr-1"></i> Careful examination</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Methods suited to the evidence</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-sky-600 font-bold text-lg mb-1"><i class="fa-solid fa-scale-balanced mr-1"></i> Legal context</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Applicable legal framework</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-sky-600 font-bold text-lg mb-1"><i class="fa-solid fa-fingerprint mr-1"></i> Documented process</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Findings explained clearly</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-sky-600 font-bold text-lg mb-1"><i class="fa-solid fa-lock mr-1"></i> Confidentiality</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Handled with discretion</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Forensic Disciplines -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-2">Forensic Capabilities</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 tracking-tight">Examination services</h3>
+                <p class="text-slate-600 mt-3 text-sm">Focused assessments of documents, fingerprints, and related evidence.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-lg mb-2">Questioned Documents (QDE)</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                        Handwriting comparison, simulated/traced forgeries, chemical erasures, overwriting, and optical ink differentiation.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t pt-3">
+                        <li>• Signature Authentication</li>
+                        <li>• Disputed Wills & Deeds</li>
+                        <li>• Cheque Fraud Detection</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-lg mb-2">Latent Print Analysis</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                        Latent friction ridge recovery using cyanoacrylate, ninhydrin, ALS lighting, and ACE-V minutiae comparison.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t pt-3">
+                        <li>• Chemical Print Lifting</li>
+                        <li>• Minutiae Ridge Matching</li>
+                        <li>• Internal Theft / Fraud Audits</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-lg mb-2">ESDA Indentation Recovery</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                        Revealing invisible indented writing impressions transferred to underlying pages to determine writing sequence.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t pt-3">
+                        <li>• Non-Destructive Electrostatics</li>
+                        <li>• Document Page Sequencing</li>
+                        <li>• Origin & Timeline Tracing</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-lg mb-2">FBI / PCC Fingerprinting</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                        Biometric recording on standard fingerprint cards for visa, immigration, and clearance applications.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t pt-3">
+                        <li>• FBI FD-258 Recording</li>
+                        <li>• Police Clearance Certificates</li>
+                        <li>• RCMP & Global Embassies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Instrumentation -->
+    <section id="instrumentation" class="py-20 bg-navy-900 text-white border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-sky-400 mb-2">Laboratory Rigor</h2>
+                    <h3 class="text-3xl font-extrabold text-white tracking-tight mb-6">Tools and examination methods</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        Examination methods are selected to suit each item, with care taken to preserve evidence and support independent review.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="text-sky-400 text-lg"><i class="fa-solid fa-bolt"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Video Spectral Comparator (VSC)</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">UV, visible, and IR luminescence for ink differentiation and alteration detection.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-sky-400 text-lg"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">High-Precision Stereo Zoom Microscopy</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">High-magnification analysis of line crossings, pen lifts, and stroke tremors.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-sky-400 text-lg"><i class="fa-solid fa-file-lines"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Electrostatic Detection Apparatus (ESDA)</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Non-chemical recovery of latent indentations on multi-page files.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-850 p-8 rounded-xl border border-slate-700 shadow-xl">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-700 pb-3">
+                        <i class="fa-solid fa-scale-balanced mr-2 text-sky-400"></i> Legal framework
+                    </h4>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-4">
+                        Reports and testimony can be tailored to the requirements of a matter. Admissibility is determined by the relevant court.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2.5">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-sky-400 mt-0.5"></i>
+                            <span><strong>Indian evidence law:</strong> Relevant provisions may apply depending on the matter and jurisdiction.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-sky-400 mt-0.5"></i>
+                            <span><strong>Other jurisdictions:</strong> Requirements vary by court and jurisdiction.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-sky-400 mt-0.5"></i>
+                            <span><strong>Expert testimony:</strong> Available by prior arrangement.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4-Step Process -->
+    <section id="methodology" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-2">Procedural Integrity</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 tracking-tight">Four-Step Engagement Workflow</h3>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="p-5 border border-gray-100 rounded-lg bg-gray-50">
+                    <div class="text-sky-600 font-bold text-2xl mb-2">01</div>
+                    <h4 class="font-bold text-navy-900 text-sm mb-1">Confidential Intake</h4>
+                    <p class="text-slate-600 text-xs">Submission of case summary & opposing party names for conflict-of-interest clearance.</p>
+                </div>
+                <div class="p-5 border border-gray-100 rounded-lg bg-gray-50">
+                    <div class="text-sky-600 font-bold text-2xl mb-2">02</div>
+                    <h4 class="font-bold text-navy-900 text-sm mb-1">Evidence Transfer</h4>
+                    <p class="text-slate-600 text-xs">Transfer of physical evidence with a documented chain of custody, or submission of high-resolution digital scans.</p>
+                </div>
+                <div class="p-5 border border-gray-100 rounded-lg bg-gray-50">
+                    <div class="text-sky-600 font-bold text-2xl mb-2">03</div>
+                    <h4 class="font-bold text-navy-900 text-sm mb-1">Lab Examination</h4>
+                    <p class="text-slate-600 text-xs">Examination using methods selected for the type of evidence and question.</p>
+                </div>
+                <div class="p-5 border border-gray-100 rounded-lg bg-gray-50">
+                    <div class="text-sky-600 font-bold text-2xl mb-2">04</div>
+                    <h4 class="font-bold text-navy-900 text-sm mb-1">Written findings</h4>
+                    <p class="text-slate-600 text-xs">A clear report with supporting images and conclusions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packaging Guidelines Summary -->
+    <section id="guidelines" class="py-16 bg-slate-100 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="max-w-2xl">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-sky-100 text-sky-800 mb-3">
+                        <i class="fa-solid fa-box-open mr-1"></i> Evidence handling
+                    </span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">Preparing evidence for review</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Handle original documents as little as possible and keep them in a clean, dry paper envelope. For digital review, provide a clear, uncompressed scan at 600 DPI or higher.
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <a href="#intake" class="inline-flex items-center px-5 py-2.5 rounded bg-navy-900 hover:bg-navy-800 text-white text-xs font-semibold gap-2 shadow">
+                        <i class="fa-solid fa-box-open"></i> Ask about submission
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Intake Form -->
+    <section id="intake" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-2">Confidential Case Intake</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 tracking-tight">Tell us about your case</h3>
+                <p class="text-slate-600 text-sm mt-2">Share a brief outline. We’ll follow up to discuss the evidence and next steps.</p>
+            </div>
+
+            <form class="bg-white p-8 rounded-xl border border-gray-200 shadow-md space-y-6">
+                <!-- Row 1 -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="party-name" class="block text-xs font-bold text-slate-700 uppercase mb-1">Your name or firm *</label>
+                        <input id="party-name" type="text" required autocomplete="name" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="Name or organization">
+                    </div>
+                    <div>
+                        <label for="client-role" class="block text-xs font-bold text-slate-700 uppercase mb-1">Your role *</label>
+                        <select id="client-role" required class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none bg-white">
+                            <option value="" selected disabled>Select a role</option>
+                            <option>Advocate / Legal Counsel</option>
+                            <option>Corporate Legal / HR</option>
+                            <option>Law Enforcement</option>
+                            <option>Private Litigant / Individual</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="email" class="block text-xs font-bold text-slate-700 uppercase mb-1">Email address *</label>
+                        <input id="email" type="email" required autocomplete="email" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone number *</label>
+                        <input id="phone" type="tel" required autocomplete="tel" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="+91 98765 43210">
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="opposing-parties" class="block text-xs font-bold text-slate-700 uppercase mb-1">Other parties in the matter *</label>
+                        <input id="opposing-parties" type="text" required class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="Names for a conflict check">
+                    </div>
+                    <div>
+                        <label for="deadline" class="block text-xs font-bold text-slate-700 uppercase mb-1">Hearing date or deadline</label>
+                        <input id="deadline" type="date" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- Scope checkboxes -->
+                <fieldset>
+                    <legend class="block text-xs font-bold text-slate-700 uppercase mb-2">What would you like examined?</legend>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs text-slate-600">
+                        <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> Signature Verification</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> Alterations / Erasures</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> ESDA Indentations</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> Latent Print Recovery</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> FBI / PCC Recording</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> Court Testimony / Rebuttal</label>
+                    </div>
+                </fieldset>
+
+                <!-- File upload -->
+                <div>
+                    <label for="scans" class="block text-xs font-bold text-slate-700 uppercase mb-1">Attach scans (PDF or TIFF, 600 DPI or higher)</label>
+                    <input id="scans" type="file" accept=".pdf,.tif,.tiff,application/pdf,image/tiff" class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100 border border-gray-300 rounded p-1">
+                </div>
+
+                <div>
+                    <label for="case-summary" class="block text-xs font-bold text-slate-700 uppercase mb-1">Brief case summary</label>
+                    <textarea id="case-summary" rows="3" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="Describe the item and the question you need answered."></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded shadow transition text-sm">
+                    Send inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 text-xs border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+            <div>
+                <span class="text-base font-bold text-white block mb-2">VERITAS FORENSIC LABORATORY</span>
+                <p class="text-slate-400 leading-relaxed mb-4">
+                    Independent examination of questioned documents, signatures, and latent prints.
+                </p>
+                <div class="text-slate-500">Careful handling. Clear findings.</div>
+            </div>
+            <div>
+                <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Next steps</span>
+                <p class="text-slate-400 leading-relaxed mb-3">Tell us what you need examined. We’ll discuss the evidence, scope, and submission options.</p>
+                <a href="#intake" class="text-sky-400 hover:text-sky-300 font-semibold">Request an assessment <i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-6 border-t border-slate-800/80 text-center text-slate-400">
+            &copy; 2026 Veritas Forensic Services.
+        </div>
+    </footer>
+
+</body>
+</html>
