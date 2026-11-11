@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Independent forensic document and fingerprint expertise by Mrunmai S. Vaidya.">
+    <meta name="theme-color" content="#101216">
+    <title>Services | Mrunmai S. Vaidya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#22252B',
+                            900: '#17191E',
+                            950: '#101216'
+                        },
+                        slate: {
+                            850: '#1E293B'
+                        },
+                        accent: {
+                            500: '#AEB4BD',
+                            600: '#8E959F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased selection:bg-accent-500 selection:text-white">
+
+    <!-- Navigation -->
+    <header class="site-header sticky top-0 z-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between min-h-[5rem] items-center gap-6">
+                <a href="../home/" class="brand-lockup" aria-label="Mrunmai S. Vaidya, home">
+                    <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-fingerprint"></i></span>
+                    <span class="brand-copy">
+                        <span class="brand-name block text-lg text-white">MRUNMAI S. VAIDYA</span>
+                        <span class="brand-title mt-1 block text-xs text-slate-300">Forensic Document & Fingerprint Expert</span>
+                    </span>
+                </a>
+                <nav aria-label="Main navigation" class="desktop-nav hidden xl:flex items-center gap-5 text-[11px] font-semibold">
+                    <a href="../home/" data-route="home">Home</a>
+                    <a href="../about/" data-route="about">About Me</a>
+                    <a href="../services/" data-route="services" aria-current="page">Services</a>
+                    <a href="../online-consultation/" data-route="online-consultation">Online Consultation</a>
+                    <a href="../resources/" data-route="resources">Resources</a>
+                    <a href="../contact/" data-route="contact">Contact</a>
+                </nav>
+                <details class="mobile-menu relative xl:hidden">
+                    <summary class="cursor-pointer rounded border border-slate-700 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        <span class="sr-only">Open navigation menu</span>
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </summary>
+                    <nav aria-label="Mobile navigation" class="mobile-nav absolute right-0 top-full mt-3 w-60 rounded-lg border p-2 shadow-xl">
+                        <a href="../home/" data-route="home" class="block rounded px-3 py-2.5 text-sm">Home</a>
+                        <a href="../about/" data-route="about" class="block rounded px-3 py-2.5 text-sm">About Me</a>
+                        <a href="../services/" data-route="services" aria-current="page" class="block rounded px-3 py-2.5 text-sm">Services</a>
+                        <a href="../online-consultation/" data-route="online-consultation" class="block rounded px-3 py-2.5 text-sm">Online Consultation</a>
+                        <a href="../resources/" data-route="resources" class="block rounded px-3 py-2.5 text-sm">Resources</a>
+                        <a href="../contact/" data-route="contact" class="block rounded px-3 py-2.5 text-sm">Contact</a>
+                    </nav>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <main>
+<section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="services-heading mb-3 font-bold tracking-tight">MY SERVICES</h2>
+                <p class="services-subheading">Independent Forensic Expertise. Professional Consultation. Personalised Assistance.</p>
+                <p class="mx-auto mt-5 max-w-2xl text-sm text-slate-400">Offering specialised forensic examination-related services, professional consultation and documentation assistance for individuals and organisations in India and internationally.</p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-art" aria-hidden="true">
+                        <span class="service-art-icons"><i class="fa-solid fa-pen-nib"></i><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="service-art-label">Document analysis</span>
+                    </div>
+                    <h3>Handwriting &amp; Signature Examination</h3>
+                    <p>Examination and comparative assessment of handwriting and signature characteristics in questioned document-related matters.</p>
+                    <ul class="service-includes">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Handwriting comparison</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Signature comparison</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Examination of questioned signatures</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Assessment of similarities and differences</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Comparative assessment of handwriting characteristics</span></li>
+                    </ul>
+                    <button class="service-more" type="button" data-open-dialog="service-handwriting" aria-haspopup="dialog">
+                        Explore service <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-art" aria-hidden="true">
+                        <span class="service-art-icons"><i class="fa-solid fa-fingerprint"></i><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="service-art-label">Ridge comparison</span>
+                    </div>
+                    <h3>Fingerprint Examination &amp; Comparison</h3>
+                    <p>Examination and comparative assessment of fingerprint impressions based on observable ridge characteristics and available material.</p>
+                    <ul class="service-includes">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Fingerprint pattern examination</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Ridge characteristic comparison</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Assessment of observable fingerprint features</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Comparative examination of available impressions</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Recording and documentation guidance</span></li>
+                    </ul>
+                    <button class="service-more" type="button" data-open-dialog="service-fingerprints" aria-haspopup="dialog">
+                        Explore service <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-art" aria-hidden="true">
+                        <span class="service-art-icons"><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-comments"></i></span>
+                        <span class="service-art-label">Independent guidance</span>
+                    </div>
+                    <h3>Forensic Consultation</h3>
+                    <p>Professional forensic guidance and consultation for individuals and organisations seeking assistance with forensic science-related matters.</p>
+                    <ul class="service-includes">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Case-related forensic guidance</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Preliminary assessment of forensic queries</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Professional advisory services</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Online forensic consultation</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Guidance on questioned-document and fingerprint procedures</span></li>
+                    </ul>
+                    <a class="service-more" href="../contact/#intake" data-enquiry-service="Forensic Consultation">
+                        Book a consultation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-art" aria-hidden="true">
+                        <span class="service-art-icons"><i class="fa-solid fa-passport"></i><i class="fa-solid fa-fingerprint"></i></span>
+                        <span class="service-art-label">PCC &amp; print cards</span>
+                    </div>
+                    <h3>Police Clearance Certificate (PCC) &amp; International Fingerprint Card Assistance</h3>
+                    <p>Guidance and documentation assistance for domestic and international Police Clearance Certificate applications and fingerprint card requirements.</p>
+                    <ul class="service-includes">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>PCC application and documentation guidance</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Form-filling and appointment guidance</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Police verification and status guidance</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Domestic and international requirements</span></li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>International fingerprint card assistance</span></li>
+                    </ul>
+                    <button class="service-more" type="button" data-open-dialog="service-pcc" aria-haspopup="dialog">
+                        Explore PCC services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </article>
+            </div>
+
+            <div class="services-cta">
+                <div>
+                    <h3>Need Professional Forensic Assistance?</h3>
+                    <p>Get in touch to discuss your requirements and explore the appropriate service or consultation.</p>
+                </div>
+                <div class="services-cta-actions">
+                    <a href="../contact/#intake" class="silver-button" data-enquiry-service="Forensic Consultation"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Request a consultation</a>
+                    <a href="../contact/#intake" class="silver-button silver-button-outline"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Contact me</a>
+                </div>
+            </div>
+
+            <p class="services-note">Services are provided independently and are subject to the nature of the material, professional competence and applicable requirements. PCCs and official clearances are issued exclusively by the competent government authorities. Application assistance does not guarantee approval, acceptance or issuance.</p>
+
+            <dialog class="service-dialog" id="service-handwriting" aria-labelledby="service-handwriting-title">
+                <div class="service-dialog-content">
+                    <div class="service-dialog-header">
+                        <div><p class="service-dialog-kicker">Service 01 · Document examination</p><h3 id="service-handwriting-title">Handwriting &amp; Signature Examination</h3></div>
+                        <button class="dialog-close" type="button" data-close-dialog aria-label="Close service details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="mt-5">Questioned writing or signatures may be assessed against suitable comparison material. The scope of any examination depends on the question asked and the quality, quantity, provenance and suitability of the available material.</p>
+                    <h4>What to expect</h4>
+                    <ul class="service-dialog-list">
+                        <li>Initial discussion of the questioned writing and the issue to be addressed.</li>
+                        <li>Consideration of suitable known writing or signatures where available.</li>
+                        <li>Assessment of observable similarities and differences using appropriate procedures.</li>
+                        <li>Discussion of limitations, possible next steps and whether formal examination is suitable.</li>
+                    </ul>
+                    <div class="service-dialog-actions"><button class="silver-button" type="button" data-enquiry-service="Handwriting &amp; Signature Examination" data-close-and-enquire>Enquire about this service</button></div>
+                </div>
+            </dialog>
+
+            <dialog class="service-dialog" id="service-fingerprints" aria-labelledby="service-fingerprints-title">
+                <div class="service-dialog-content">
+                    <div class="service-dialog-header">
+                        <div><p class="service-dialog-kicker">Service 02 · Fingerprint examination</p><h3 id="service-fingerprints-title">Fingerprint Examination &amp; Comparison</h3></div>
+                        <button class="dialog-close" type="button" data-close-dialog aria-label="Close service details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="mt-5">Fingerprint impressions may be assessed for observable pattern and ridge characteristics and, when appropriate, compared with available impressions. Suitability, image quality and the limitations of the material inform the scope of any assessment.</p>
+                    <h4>What to expect</h4>
+                    <ul class="service-dialog-list">
+                        <li>Preliminary discussion of the impression type, source and examination question.</li>
+                        <li>Review of observable features and comparison material, subject to quality and suitability.</li>
+                        <li>Guidance on appropriate recording and documentation for a proposed submission.</li>
+                        <li>Clear explanation of scope and limitations before any formal engagement.</li>
+                    </ul>
+                    <div class="service-dialog-actions"><button class="silver-button" type="button" data-enquiry-service="Fingerprint Examination &amp; Comparison" data-close-and-enquire>Enquire about this service</button></div>
+                </div>
+            </dialog>
+
+            <dialog class="service-dialog" id="service-pcc" aria-labelledby="service-pcc-title">
+                <div class="service-dialog-content">
+                    <div class="service-dialog-header">
+                        <div><p class="service-dialog-kicker">Service 04 · Application guidance</p><h3 id="service-pcc-title">PCC &amp; International Fingerprint Card Assistance</h3></div>
+                        <button class="dialog-close" type="button" data-close-dialog aria-label="Close PCC service details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="mt-5">Assistance can include understanding the requesting authority’s process, organising application information and navigating documentation or appointment steps. Requirements depend on the country, purpose, applicant circumstances and receiving authority.</p>
+                    <h4>Assistance may include</h4>
+                    <ul class="service-dialog-list">
+                        <li>PCC application and supporting-document checklist guidance.</li>
+                        <li>Form-completion assistance and appointment or police-verification process guidance.</li>
+                        <li>Guidance on checking application status through the relevant official channel.</li>
+                        <li>Help identifying which fingerprint-card format the receiving authority has requested.</li>
+                    </ul>
+                    <h4>INTERNATIONAL FINGERPRINT CARD FORMATS</h4>
+                    <p>These formats serve different requesting workflows. Select the exact form named by the receiving authority; do not treat formats as interchangeable.</p>
+                    <div class="format-grid" aria-label="Fingerprint card formats">
+                        <article><button class="format-card" type="button" data-open-dialog="format-fd258" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-enquiry-format="FBI FD-258" aria-haspopup="dialog"><span class="format-card-index">CARD 01</span><span class="format-card-flag" aria-hidden="true">🇺🇸</span><strong>FBI FD-258</strong><span class="format-card-authority">FBI · Applicant card</span><span class="format-card-purpose">When the requester names FD-258.</span><span>VIEW DETAILS&nbsp; →</span></button></article>
+                        <article><button class="format-card" type="button" data-open-dialog="format-fd1164" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-enquiry-format="FBI FD-1164" aria-haspopup="dialog"><span class="format-card-index">CARD 02</span><span class="format-card-flag" aria-hidden="true">🇺🇸</span><strong>FBI FD-1164</strong><span class="format-card-authority">FBI · Form-specific request</span><span class="format-card-purpose">Only for a process that names this form.</span><span>VIEW DETAILS&nbsp; →</span></button></article>
+                        <article><button class="format-card" type="button" data-open-dialog="format-sf87" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-enquiry-format="SF-87" aria-haspopup="dialog"><span class="format-card-index">CARD 03</span><span class="format-card-flag" aria-hidden="true">🇺🇸</span><strong>SF-87</strong><span class="format-card-authority">U.S. OPM · Federal personnel</span><span class="format-card-purpose">Fingerprinting for federal civilian employment.</span><span>VIEW DETAILS&nbsp; →</span></button></article>
+                        <article><button class="format-card" type="button" data-open-dialog="format-c216c" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-enquiry-format="RCMP C-216C" aria-haspopup="dialog"><span class="format-card-index">CARD 04</span><span class="format-card-flag" aria-hidden="true">🇨🇦</span><strong>RCMP C-216C</strong><span class="format-card-authority">Canada · RCMP</span><span class="format-card-purpose">Where the RCMP or requester specifies C-216C.</span><span>VIEW DETAILS&nbsp; →</span></button></article>
+                    </div>
+                    <p class="format-warning">Current forms, collection methods, identity documents and submission routes are set by the relevant authority and can change. Please verify the latest instructions directly before booking fingerprinting or sending documents.</p>
+                    <div class="service-dialog-actions"><button class="silver-button" type="button" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-close-and-enquire>Enquire about PCC assistance</button></div>
+                </div>
+            </dialog>
+
+            <dialog class="service-dialog" id="format-fd258" aria-labelledby="format-fd258-title">
+                <div class="service-dialog-content">
+                    <div class="service-dialog-header"><div><p class="service-dialog-kicker">United States · FBI</p><h3 id="format-fd258-title">FBI Applicant Fingerprint Card — FD-258</h3></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close FD-258 details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+                    <p class="mt-5">FD-258 is a U.S. applicant fingerprint card used when a receiving agency or authorised channel specifically requests this format. Its use does not by itself establish which background-check or identity-history process applies.</p>
+                    <h4>Who may need it</h4><p>Applicants whose U.S. requesting organisation or agency names FD-258 in its instructions. Confirm the recipient, purpose and permitted submission route before fingerprints are taken.</p>
+                    <h4>Fingerprinting and documentation</h4><p>Ask the requesting authority whether rolled and plain impressions are required, the required sequence, who may take the prints, and whether an original ink card or another capture method is accepted. Follow the current FD-258 fields and its instructions; confirm any required identity information, signature, date or consent with the recipient.</p>
+                    <h4>Submission guidance</h4><p>Send the completed card only through the route specified by the requesting authority. Do not substitute FD-1164 or SF-87 unless the recipient explicitly approves that format.</p>
+                    <a class="authority-link" href="https://www.fbi.gov/services/cjis/identity-history-summary-checks" target="_blank" rel="noopener noreferrer">Check FBI Identity History Summary guidance ↗</a>
+                    <div class="service-dialog-actions"><button class="silver-button" type="button" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-enquiry-format="FBI FD-258" data-close-and-enquire>Enquire about FD-258</button></div>
+                </div>
+            </dialog>
+
+            <dialog class="service-dialog" id="format-fd1164" aria-labelledby="format-fd1164-title">
+                <div class="service-dialog-content">
+                    <div class="service-dialog-header"><div><p class="service-dialog-kicker">United States · confirm with requester</p><h3 id="format-fd1164-title">FBI Fingerprint Card — FD-1164</h3></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close FD-1164 details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+                    <p class="mt-5">FD-1164 is a distinct form from FD-258 and SF-87. The exact purpose and acceptance of the form depend on the requesting organisation’s instructions. Confirm that the requester requires the current FD-1164 version and identify the intended recipient before arranging fingerprinting.</p>
+                    <h4>Who may need it</h4><p>Only applicants whose requesting U.S. authority or organisation expressly identifies FD-1164 for their process. Do not infer that a request for “FBI fingerprints” means this form.</p>
+                    <h4>Fingerprinting and documentation</h4><p>Ask the requester and fingerprinting agency which rolled and plain impressions, identifiers, signatures, dates and identity documents are required. Follow the current card’s printed instructions; requirements for FD-258 or SF-87 do not automatically apply.</p>
+                    <h4>Submission guidance</h4><p>Confirm whether the original card, a particular collection provider or a specified mailing/electronic route is required. Obtain confirmation from the requesting authority if the named form or process is unclear.</p>
+                    <a class="authority-link" href="https://www.fbi.gov/services/cjis/identity-history-summary-checks" target="_blank" rel="noopener noreferrer">Check FBI identity-history guidance ↗</a>
+                    <div class="service-dialog-actions"><button class="silver-button" type="button" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-enquiry-format="FBI FD-1164" data-close-and-enquire>Enquire about FD-1164</button></div>
+                </div>
+            </dialog>
+
+            <dialog class="service-dialog" id="format-sf87" aria-labelledby="format-sf87-title">
+                <div class="service-dialog-content">
+                    <div class="service-dialog-header"><div><p class="service-dialog-kicker">United States · federal personnel process</p><h3 id="format-sf87-title">Standard Form 87 — SF-87</h3></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close SF-87 details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+                    <p class="mt-5">SF-87 is the U.S. Standard Form titled “Fingerprinting for Federal Civilian Employment.” It is associated with federal civilian personnel processing and should be used only when the responsible federal agency directs the applicant to use it.</p>
+                    <h4>Who may need it</h4><p>Applicants in a federal civilian employment or related agency process where the hiring or sponsoring agency specifically provides or requests SF-87.</p>
+                    <h4>Fingerprinting and documentation</h4><p>Follow the sponsoring agency’s current instructions for the form edition, fingerprint capture, rolled and plain impressions where specified, identifying details and any required agency representative certification. Confirm acceptable identity documents and whether the agency arranges capture.</p>
+                    <h4>Submission guidance</h4><p>Return the form through the hiring or sponsoring agency’s stated process. SF-87 is not a general replacement for applicant cards used in other FBI or international workflows.</p>
+                    <a class="authority-link" href="https://www.opm.gov/forms/pdf_fill/sf87.pdf" target="_blank" rel="noopener noreferrer">View the official OPM SF-87 form ↗</a>
+                    <div class="service-dialog-actions"><button class="silver-button" type="button" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-enquiry-format="SF-87" data-close-and-enquire>Enquire about SF-87</button></div>
+                </div>
+            </dialog>
+
+            <dialog class="service-dialog" id="format-c216c" aria-labelledby="format-c216c-title">
+                <div class="service-dialog-content">
+                    <div class="service-dialog-header"><div><p class="service-dialog-kicker">Canada · RCMP</p><h3 id="format-c216c-title">RCMP Fingerprint Form — C-216C</h3></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close C-216C details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+                    <p class="mt-5">C-216C is an RCMP fingerprint form associated with fingerprint-based criminal record processing in Canada. Whether it is the correct form depends on the requested RCMP service and the instructions from the Canadian or foreign authority seeking the result.</p>
+                    <h4>Who may need it</h4><p>Applicants directed to submit fingerprints using the RCMP C-216C form for a specific Canadian criminal record check or related request. Confirm the required service and submission path first.</p>
+                    <h4>Fingerprinting and documentation</h4><p>Use the current C-216C and follow the receiving agency’s directions for rolled and flat impressions, identifying details and collector information. Confirm whether an accredited fingerprinting agency, original card, identity documents or additional consent is required for the particular request.</p>
+                    <h4>Submission guidance</h4><p>Follow the RCMP or requesting agency’s current instructions for who may collect the prints, where the card must be sent, and any required supporting documents. A C-216C request is not interchangeable with U.S. FBI forms.</p>
+                    <a class="authority-link" href="https://rcmp.ca/en/criminal-records" target="_blank" rel="noopener noreferrer">Check RCMP criminal-record guidance ↗</a>
+                    <div class="service-dialog-actions"><button class="silver-button" type="button" data-enquiry-service="PCC &amp; International Fingerprint Card Assistance" data-enquiry-format="RCMP C-216C" data-close-and-enquire>Enquire about C-216C</button></div>
+                </div>
+            </dialog>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 text-xs border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+            <div>
+                <span class="brand-name text-base font-bold text-white block mb-2">MRUNMAI S. VAIDYA</span>
+                <p class="text-slate-400 leading-relaxed mb-4">
+                    Independent examination of questioned documents, signatures, and fingerprints.
+                </p>
+                <div class="text-slate-500">Careful handling. Clear findings.</div>
+            </div>
+            <div>
+                <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Next steps</span>
+                <p class="text-slate-400 leading-relaxed mb-3">Tell us what you need examined. We’ll discuss the evidence, scope, and submission options.</p>
+                <a href="../contact/#intake" class="text-sky-400 hover:text-sky-300 font-semibold">Request an assessment <i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-6 border-t border-slate-800/80 text-center text-slate-400">
+            &copy; 2026 Mrunmai S. Vaidya. Independent Forensic Expertise.
+        </div>
+    </footer>
+
+    <script src="../assets/site.js" defer></script>
+</body>
+</html>
