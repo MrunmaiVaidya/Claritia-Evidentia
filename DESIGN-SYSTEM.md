@@ -45,7 +45,7 @@ Use the neutral palette as the interface foundation. Avoid bright blue, saturate
 
 - Keep the sticky navigation compact. On wide desktop, show the full horizontal navigation; on narrower viewports, show an accessible dropdown menu.
 - The hero follows the reference: full-bleed forensic imagery, text aligned left, cinematic charcoal shading, and vertically centered content. On small screens, retain legible left-aligned text and a sufficiently dark image overlay.
-- Preserve the section order and useful anchors: Home, About Me, Services, Freelance Services, Online Consultation, Resources, and Contact.
+- Preserve the page navigation: Home, About Me, Services, Online Consultation, Case Insights, and Contact.
 - Use a centered content width of approximately 1160px, generous vertical section spacing, and consistent horizontal gutters.
 - Service and process cards use a restrained two-tone dark surface with fine silver borders, modest radii, and low-contrast shadows.
 - Stack multi-column content at narrow widths. Prevent horizontal scrolling, clipped labels, or controls wider than the viewport.

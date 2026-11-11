@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore landmark cases involving questioned document examination, handwriting analysis, signature examination and fingerprint identification, with professional forensic insights and lessons from real-world investigations.">
+    <meta name="theme-color" content="#101216">
+    <title>Case Insights | Questioned Document &amp; Fingerprint Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#22252B',
+                            900: '#17191E',
+                            950: '#101216'
+                        },
+                        slate: {
+                            850: '#1E293B'
+                        },
+                        accent: {
+                            500: '#AEB4BD',
+                            600: '#8E959F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased selection:bg-accent-500 selection:text-white">
+
+    <!-- Navigation -->
+    <header class="site-header sticky top-0 z-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between min-h-[5rem] items-center gap-6">
+                <a href="../home/" class="brand-lockup" aria-label="Mrunmai S. Vaidya, home">
+                    <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-fingerprint"></i></span>
+                    <span class="brand-copy">
+                        <span class="brand-name block text-lg text-white">MRUNMAI S. VAIDYA</span>
+                        <span class="brand-title mt-1 block text-xs text-slate-300">Forensic Document & Fingerprint Expert</span>
+                    </span>
+                </a>
+                <nav aria-label="Main navigation" class="desktop-nav hidden xl:flex items-center gap-5 text-[11px] font-semibold">
+                    <a href="../home/" data-route="home">Home</a>
+                    <a href="../about/" data-route="about">About Me</a>
+                    <a href="../services/" data-route="services">Services</a>
+                    <a href="../online-consultation/" data-route="online-consultation">Online Consultation</a>
+                    <a href="../case-insights/" data-route="case-insights" aria-current="page">Case Insights</a>
+                    <a href="../contact/" data-route="contact">Contact</a>
+                </nav>
+                <details class="mobile-menu relative xl:hidden">
+                    <summary class="cursor-pointer rounded border border-slate-700 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        <span class="sr-only">Open navigation menu</span>
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </summary>
+                    <nav aria-label="Mobile navigation" class="mobile-nav absolute right-0 top-full mt-3 w-60 rounded-lg border p-2 shadow-xl">
+                        <a href="../home/" data-route="home" class="block rounded px-3 py-2.5 text-sm">Home</a>
+                        <a href="../about/" data-route="about" class="block rounded px-3 py-2.5 text-sm">About Me</a>
+                        <a href="../services/" data-route="services" class="block rounded px-3 py-2.5 text-sm">Services</a>
+                        <a href="../online-consultation/" data-route="online-consultation" class="block rounded px-3 py-2.5 text-sm">Online Consultation</a>
+                        <a href="../case-insights/" data-route="case-insights" aria-current="page" class="block rounded px-3 py-2.5 text-sm">Case Insights</a>
+                        <a href="../contact/" data-route="contact" class="block rounded px-3 py-2.5 text-sm">Contact</a>
+                    </nav>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <main class="case-insights-page">
+        <section class="case-insights-hero">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="eyebrow"><i class="fa-solid fa-magnifying-glass mr-2" aria-hidden="true"></i>Forensic case studies</p>
+                <h1>CASE INSIGHTS</h1>
+                <p class="case-insights-subtitle">Landmark Cases in Questioned Documents &amp; Fingerprint Examination</p>
+                <p class="case-insights-intro mt-5">Cases in Questioned Documents &amp; Fingerprint Examination. Explore how forensic evidence has informed investigations and legal proceedings, and the importance of careful interpretation, verification, and context.</p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="case-insights-tools" role="search">
+                <label class="sr-only" for="case-search">Search case name</label>
+                <input id="case-search" class="case-insights-search" type="search" placeholder="Search by case name" autocomplete="off">
+                <button class="case-filter-button" type="button" data-case-filter="all" aria-pressed="true">All cases</button>
+                <button class="case-filter-button" type="button" data-case-filter="documents" aria-pressed="false">Questioned documents</button>
+                <button class="case-filter-button" type="button" data-case-filter="fingerprints" aria-pressed="false">Fingerprints</button>
+            </div>
+            <p id="case-search-status" class="sr-only" role="status" aria-live="polite"></p>
+
+            <section class="case-category" data-case-category="documents" aria-labelledby="document-cases-heading">
+                <h2 class="case-category-heading" id="document-cases-heading"><i class="fa-solid fa-file-signature" aria-hidden="true"></i>Questioned Documents &amp; Handwriting</h2>
+                <div class="case-insight-grid">
+                    <article class="case-insight-card" data-case-card data-category="documents" data-case-name="Dreyfus Affair">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span>France</span><span>1894–1906</span></p>
+                            <h3>The Dreyfus Affair</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-pen-nib mr-1" aria-hidden="true"></i>Handwriting examination · disputed authorship</p>
+                            <p class="case-insight-teaser">A contested handwriting comparison of a military memorandum became part of a notorious wrongful-conviction case.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-dreyfus-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-dreyfus-details" hidden>
+                            <dl>
+                                <div><dt>Background</dt><dd>In 1894, French army officer Alfred Dreyfus was accused of passing military information to Germany. The case centered in part on an anonymous memorandum known as the bordereau.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Could the handwriting on the bordereau be attributed to Dreyfus?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>The bordereau and handwriting specimens used by contemporary examiners; the prosecution also relied on a secret dossier that was not disclosed to the defense.</dd></div>
+                                <div><dt>Examination / methodology</dt><dd>Military handwriting experts compared writing characteristics. Their opinions were divided; this historical examination predated modern questioned-document practice and should not be equated with current standards.</dd></div>
+                                <div><dt>Key findings</dt><dd>The handwriting opinions were contested rather than a unanimous or conclusive identification. Later scrutiny focused on other potential authors, including Ferdinand Walsin Esterhazy.</dd></div>
+                                <div><dt>Role of forensic evidence</dt><dd>The handwriting claim helped implicate Dreyfus, but it was one part of a case also driven by undisclosed evidence and institutional decisions; it did not independently establish guilt.</dd></div>
+                                <div><dt>Outcome / significance</dt><dd>Dreyfus was convicted, later pardoned, and exonerated and reinstated in 1906. The affair remains a caution about disputed expertise, disclosure, and confirmation bias.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic Insight:</strong> A handwriting opinion must be presented with its limitations and alternatives. Independent review, transparent reasoning, and access to relevant evidence matter.</p>
+                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://www.britannica.com/event/Dreyfus-affair" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica, “Dreyfus affair”</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="case-insight-card" data-case-card data-category="documents" data-case-name="Lindbergh kidnapping">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span>United States</span><span>1932–1936</span></p>
+                            <h3>The Lindbergh Kidnapping</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-file-lines mr-1" aria-hidden="true"></i>Ransom-note handwriting · questioned documents</p>
+                            <p class="case-insight-teaser">Handwriting comparison of ransom notes was presented alongside other evidence in the investigation of the kidnapping of Charles Lindbergh’s son.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-lindbergh-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-lindbergh-details" hidden>
+                            <dl>
+                                <div><dt>Background</dt><dd>Charles Lindbergh’s infant son was kidnapped from the family home in New Jersey in 1932. A series of ransom notes and communications followed.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Did the ransom-note handwriting correspond to writing associated with suspect Bruno Richard Hauptmann?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Ransom notes and handwriting exemplars attributed to Hauptmann. The prosecution also presented other evidence, including evidence concerning ransom money and the child’s remains.</dd></div>
+                                <div><dt>Examination / methodology</dt><dd>Handwriting experts compared writing in the notes with known and requested samples. Their comparison was presented as expert testimony at trial.</dd></div>
+                                <div><dt>Key findings</dt><dd>Prosecution experts testified that the notes were written by Hauptmann. The identification was expert opinion, not an instrument-based certainty, and was part of a wider evidentiary case.</dd></div>
+                                <div><dt>Role of forensic evidence</dt><dd>The ransom-note comparison linked the suspect to communications in the case; it should not be described as the sole basis for the verdict.</dd></div>
+                                <div><dt>Outcome / significance</dt><dd>Hauptmann was convicted and executed in 1936. The case is frequently discussed in the history of forensic document examination and the presentation of expert testimony.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic Insight:</strong> Separate observable similarities from an authorship conclusion, explain the comparison material and its limitations, and consider the opinion within the full case context.</p>
+                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://www.fbi.gov/history/famous-cases/lindbergh-kidnapping" target="_blank" rel="noopener noreferrer">Federal Bureau of Investigation, “Lindbergh Kidnapping”</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="case-insight-card" data-case-card data-category="documents" data-case-name="Hitler Diaries">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span>West Germany</span><span>1983</span></p>
+                            <h3>The Hitler Diaries</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-file-circle-check mr-1" aria-hidden="true"></i>Document authentication · handwriting · materials analysis</p>
+                            <p class="case-insight-teaser">A set of purported diaries attributed to Adolf Hitler was exposed as forged after scrutiny of the documents and their materials.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-diaries-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-diaries-details" hidden>
+                            <dl>
+                                <div><dt>Background</dt><dd>In 1983, a West German magazine announced the discovery of diaries represented as Adolf Hitler’s personal writings. They were published before their authenticity was adequately established.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Were the manuscripts genuine historical documents from Hitler’s period, and were they written by him?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>The diaries’ handwriting and physical materials, including paper and ink, were examined.</dd></div>
+                                <div><dt>Examination / methodology</dt><dd>Examination combined handwriting assessment with scientific testing of the document materials and checks against historical details. Testing indicated postwar materials, inconsistent with the claimed provenance.</dd></div>
+                                <div><dt>Key findings</dt><dd>The diaries were modern forgeries, later attributed to Konrad Kujau. The materials evidence contradicted the claim that they were wartime originals.</dd></div>
+                                <div><dt>Role of forensic evidence</dt><dd>Scientific material analysis was decisive in disproving authenticity; handwriting resemblance or an initial expert endorsement could not override contradictory physical evidence.</dd></div>
+                                <div><dt>Outcome / significance</dt><dd>The publication was withdrawn and the forgery became a major example of failed document authentication and inadequate source verification.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic Insight:</strong> Authenticate the whole document. Handwriting must be assessed alongside paper, ink, provenance, chronology, and independent historical evidence.</p>
+                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://time.com/archive/6859825/hitlers-forged-diaries/" target="_blank" rel="noopener noreferrer">TIME, “Hitler’s Forged Diaries”</a>; <a href="https://www.britannica.com/topic/Hitler-Diaries" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica, “Hitler Diaries”</a>.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="case-category" data-case-category="fingerprints" aria-labelledby="fingerprint-cases-heading">
+                <h2 class="case-category-heading" id="fingerprint-cases-heading"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i>Fingerprint Examination</h2>
+                <div class="case-insight-grid">
+                    <article class="case-insight-card" data-case-card data-category="fingerprints" data-case-name="Francisca Rojas">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span>Argentina</span><span>1892</span></p>
+                            <h3>The Francisca Rojas Case</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-fingerprint mr-1" aria-hidden="true"></i>Latent fingerprint identification</p>
+                            <p class="case-insight-teaser">A bloody fingerprint in a double-murder investigation is widely cited as an early use of fingerprints to identify a suspect.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-rojas-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-rojas-details" hidden>
+                            <dl>
+                                <div><dt>Background</dt><dd>In Necochea, Argentina, Francisca Rojas’s two children were murdered. Rojas accused a neighbor; the investigation turned to a bloody impression at the scene.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Whose finger made the bloody impression, and could it help identify the person responsible?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>A bloody fingerprint associated with the scene and inked comparison prints. Historical accounts credit police official Eduardo Álvarez and the classification work of Juan Vucetich.</dd></div>
+                                <div><dt>Examination / methodology</dt><dd>The impression was compared with recorded fingerprints using Vucetich’s developing classification and comparison system, an early method in the history of fingerprint identification.</dd></div>
+                                <div><dt>Key findings</dt><dd>Accounts report that the print was identified as Rojas’s; she later confessed. The case is often called the first murder solved or first conviction through fingerprint evidence, though those descriptions and the exact legal role of the print are not always consistently reported.</dd></div>
+                                <div><dt>Role of forensic evidence</dt><dd>The fingerprint helped redirect suspicion toward Rojas and challenge her accusation. It should not be inflated into a claim that the print alone established every fact of the crime.</dd></div>
+                                <div><dt>Outcome / significance</dt><dd>The case is a landmark in the adoption of fingerprints for criminal identification, particularly in Argentina and the history of forensic identification.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic Insight:</strong> Preserve historical nuance: distinguish identification, confession, prosecution, and conviction, and document the comparison basis rather than repeating “first” claims without qualification.</p>
+                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://www.ojp.gov/pdffiles1/nij/225320.pdf" target="_blank" rel="noopener noreferrer">U.S. National Institute of Justice, <em>The Fingerprint Sourcebook</em></a>; <a href="https://www.hup.harvard.edu/books/9780674010004" target="_blank" rel="noopener noreferrer">Simon A. Cole, <em>Suspect Identities</em>, Harvard University Press</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="case-insight-card" data-case-card data-category="fingerprints" data-case-name="Will West William West">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span>United States</span><span>1903, commonly dated</span></p>
+                            <h3>The Will West / William West Story</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-address-card mr-1" aria-hidden="true"></i>Fingerprint identification · anthropometry</p>
+                            <p class="case-insight-teaser">A widely repeated prison-identification story contrasts two men’s similar appearance and Bertillon measurements with different fingerprints.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-west-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-west-details" hidden>
+                            <dl>
+                                <div><dt>Background</dt><dd>The story concerns two Leavenworth prisoners, commonly identified as Will West and William West, whose names and physical measurements were reportedly very similar.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Could an identification system distinguish the two records when names, appearance, and anthropometric measurements were alike?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Reported Bertillon measurements and the two men’s fingerprint records.</dd></div>
+                                <div><dt>Examination / methodology</dt><dd>The often-recounted account says the measurements were compared and fingerprints then used to distinguish the records. Later histories caution that popular versions simplify or vary in their details.</dd></div>
+                                <div><dt>Key findings</dt><dd>The fingerprint records were different, despite the reported similarity in measurements and appearance.</dd></div>
+                                <div><dt>Role of forensic evidence</dt><dd>The episode became an illustration of fingerprints as a more discriminating identification method than the particular anthropometric comparison in this anecdote—not proof that fingerprint identification is infallible.</dd></div>
+                                <div><dt>Outcome / significance</dt><dd>The story is associated with the transition toward fingerprint-based identification in institutions. Its details should be treated as a historical anecdote, not a fully documented modern case study.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic Insight:</strong> No identification method is error-proof. Use suitable comparison material, quality controls, independent verification, and careful record management.</p>
+                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://www.ojp.gov/pdffiles1/nij/225320.pdf" target="_blank" rel="noopener noreferrer">U.S. National Institute of Justice, <em>The Fingerprint Sourcebook</em></a>; <a href="https://www.hup.harvard.edu/books/9780674010004" target="_blank" rel="noopener noreferrer">Simon A. Cole, <em>Suspect Identities</em>, Harvard University Press</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="case-insight-card" data-case-card data-category="fingerprints" data-case-name="Brandon Mayfield Madrid fingerprint">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span>United States / Spain</span><span>2004</span></p>
+                            <h3>The Brandon Mayfield Misidentification</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-fingerprint mr-1" aria-hidden="true"></i>Latent print comparison · verification and quality control</p>
+                            <p class="case-insight-teaser">The FBI withdrew its identification of an Oregon attorney after Spanish authorities disagreed about a latent print associated with the Madrid train bombings.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-mayfield-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-mayfield-details" hidden>
+                            <dl>
+                                <div><dt>Background</dt><dd>After the March 2004 Madrid train bombings, investigators examined a latent print on a bag associated with bomb-making materials. Oregon attorney Brandon Mayfield, a U.S. citizen, became a candidate in the FBI comparison.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Did the latent print originate from Mayfield?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>A partial latent fingerprint and reference fingerprint records, including Mayfield’s prints and material available to Spanish authorities.</dd></div>
+                                <div><dt>Examination / methodology</dt><dd>FBI examiners made an identification, which underwent internal review. Spanish examiners disagreed; further investigation and review led the FBI to withdraw its identification. The U.S. Department of Justice Inspector General later examined the FBI’s handling of the matter.</dd></div>
+                                <div><dt>Key findings</dt><dd>The FBI’s identification of Mayfield was erroneous. The Inspector General identified process and judgment failures, including contextual influences and deficiencies in verification and review.</dd></div>
+                                <div><dt>Role of forensic evidence</dt><dd>The fingerprint association drove investigative attention and Mayfield’s arrest and detention. He was not convicted; the FBI acknowledged the error and apologized.</dd></div>
+                                <div><dt>Outcome / significance</dt><dd>Mayfield was released after the misidentification was corrected. The case prompted scrutiny of latent-print examination practices, independent verification, contextual bias, and quality assurance.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic Insight:</strong> Examiners need context management, documented reasoning, independent verification, and a willingness to revisit an identification when conflicting evidence emerges.</p>
+                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://oig.justice.gov/sites/default/files/archive/special/0504/final.pdf" target="_blank" rel="noopener noreferrer">U.S. Department of Justice Office of the Inspector General, <em>A Review of the FBI’s Handling of the Brandon Mayfield Case</em></a>.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <p class="case-insights-empty" id="case-no-results" hidden>No matching cases found. Try another name or category.</p>
+            <p class="case-insight-note mb-12"><strong>Educational note:</strong> These summaries describe selected historical accounts and reported findings. They are not case opinions, and forensic methods and standards have changed over time.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 text-xs border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+            <div>
+                <span class="brand-name text-base font-bold text-white block mb-2">MRUNMAI S. VAIDYA</span>
+                <p class="text-slate-400 leading-relaxed mb-4">
+                    Independent examination of questioned documents, signatures, and fingerprints.
+                </p>
+                <div class="text-slate-500">Careful handling. Clear findings.</div>
+            </div>
+            <div>
+                <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Next steps</span>
+                <p class="text-slate-400 leading-relaxed mb-3">Tell us what you need examined. We’ll discuss the evidence, scope, and submission options.</p>
+                <a href="../contact/#intake" class="text-sky-400 hover:text-sky-300 font-semibold">Request an assessment <i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-6 border-t border-slate-800/80 text-center text-slate-400">
+            &copy; 2026 Mrunmai S. Vaidya. Independent Forensic Expertise.
+        </div>
+    </footer>
+
+    <script src="../assets/site.js" defer></script>
+</body>
+</html>

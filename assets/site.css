@@ -638,8 +638,146 @@
         #contact button[type="submit"] { background: linear-gradient(135deg, #d4d7dc, #aeb4bd) !important; color: #17191e !important; }
         footer { background: #0b0d10 !important; border-color: var(--line) !important; }
         footer a { color: #d3d6dc !important; }
-        section[id], [id="intake"], [id="resources"], footer { scroll-margin-top: 6rem; }
+        section[id], [id="intake"], footer { scroll-margin-top: 6rem; }
         #guidelines .bg-sky-100 { background: rgba(190, 196, 205, .1) !important; color: #d7dbe0 !important; }
+        .case-insights-page { min-height: 60vh; }
+        .case-insights-hero {
+            position: relative;
+            overflow: hidden;
+            padding: clamp(4rem, 8vw, 6.5rem) 0;
+            border-bottom: 1px solid var(--line);
+            background:
+                radial-gradient(ellipse at 82% 30%, rgba(190, 196, 205, .09), transparent 34%),
+                linear-gradient(135deg, #17191e, #101216 72%);
+        }
+        .case-insights-hero::after {
+            position: absolute;
+            top: 50%;
+            right: clamp(-1rem, 6vw, 5rem);
+            width: clamp(12rem, 26vw, 22rem);
+            aspect-ratio: 1;
+            border: 1px solid rgba(190, 196, 205, .09);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1.2rem rgba(190, 196, 205, .018), 0 0 0 2.4rem rgba(190, 196, 205, .014), 0 0 0 3.6rem rgba(190, 196, 205, .01);
+            content: "";
+            pointer-events: none;
+            transform: translateY(-50%);
+        }
+        .case-insights-hero > div { position: relative; z-index: 1; }
+        .case-insights-hero h1 {
+            margin: .55rem 0 .75rem;
+            color: #fff;
+            font: 700 clamp(2.4rem, 5vw, 3.7rem)/1.1 "Playfair Display", Georgia, serif;
+            letter-spacing: .04em;
+        }
+        .case-insights-hero .case-insights-subtitle {
+            color: #d7dbe0;
+            font: italic 500 clamp(1.05rem, 2vw, 1.35rem)/1.5 "Playfair Display", Georgia, serif;
+        }
+        .case-insights-intro { max-width: 46rem; color: var(--muted); font-size: .9375rem; }
+        .case-insights-tools {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: .75rem;
+            margin: 2rem auto 1.25rem;
+        }
+        .case-insights-search {
+            min-height: 2.9rem;
+            min-width: min(100%, 18rem);
+            flex: 1 1 16rem;
+            padding: .65rem .9rem;
+            border: 1px solid var(--line);
+            border-radius: .45rem;
+            background: #111318;
+            color: #fff;
+        }
+        .case-filter-button {
+            min-height: 2.9rem;
+            padding: .65rem .9rem;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: transparent;
+            color: #d2d5da;
+            cursor: pointer;
+            font-size: .75rem;
+            font-weight: 600;
+            transition: background .2s ease, color .2s ease, border-color .2s ease;
+        }
+        .case-filter-button[aria-pressed="true"], .case-filter-button:hover {
+            border-color: rgba(220, 224, 230, .55);
+            background: linear-gradient(135deg, #d4d7dc, #aeb4bd);
+            color: #17191e;
+        }
+        .case-category { padding: clamp(2.5rem, 5vw, 4rem) 0; }
+        .case-category + .case-category { border-top: 1px solid var(--line); }
+        .case-category-heading {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            margin-bottom: 1.4rem;
+            color: #fff;
+            font: 600 clamp(1.35rem, 2.5vw, 1.8rem)/1.3 "Playfair Display", Georgia, serif;
+        }
+        .case-category-heading i { color: var(--silver); font-size: 1.1rem; }
+        .case-insight-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+        .case-insight-card {
+            min-width: 0;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: .75rem;
+            background: linear-gradient(145deg, #1d2026, #17191e 72%);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, .16);
+        }
+        .case-insight-card[hidden], .case-category[hidden] { display: none; }
+        .case-insight-summary { padding: 1.35rem; }
+        .case-insight-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .45rem .8rem;
+            margin-bottom: .65rem;
+            color: var(--silver);
+            font-size: .6875rem;
+            font-weight: 600;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+        .case-insight-card h3 {
+            margin-bottom: .45rem;
+            color: #fff;
+            font: 600 1.25rem/1.35 "Playfair Display", Georgia, serif;
+        }
+        .case-insight-area { margin-bottom: .65rem; color: #d2d5da; font-size: .75rem; }
+        .case-insight-teaser { color: var(--muted); font-size: .875rem; line-height: 1.7; }
+        .case-insight-details { padding: 0 1.35rem 1.35rem; }
+        .case-insight-details[hidden] { display: none; }
+        .case-insight-details dl { display: grid; gap: .85rem; margin: 0; }
+        .case-insight-details dt { margin-bottom: .15rem; color: #e2e4e8; font-size: .75rem; font-weight: 700; }
+        .case-insight-details dd { margin: 0; color: var(--muted); font-size: .8125rem; line-height: 1.65; }
+        .case-insight-role { margin: 1rem 0; padding: .9rem 1rem; border-left: 2px solid var(--silver); background: rgba(255,255,255,.035); }
+        .case-insight-role strong { display: block; margin-bottom: .2rem; color: #fff; font-size: .75rem; }
+        .case-insight-sources { margin-top: .9rem; color: var(--muted); font-size: .75rem; }
+        .case-insight-sources a { color: #e1e3e7; text-underline-offset: .2rem; }
+        .case-insight-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            min-height: 2.6rem;
+            margin-top: 1rem;
+            padding: .45rem .8rem;
+            border: 1px solid rgba(190, 196, 205, .28);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .025);
+            color: #e1e3e7;
+            cursor: pointer;
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+        .case-insight-toggle:hover { background: rgba(255, 255, 255, .09); }
+        .case-insight-note { margin: 1rem 0 0; padding-top: .85rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .75rem; }
+        .case-insights-empty { padding: 1.5rem; border: 1px dashed var(--line); border-radius: .6rem; color: var(--muted); text-align: center; }
         :focus-visible { outline: 2px solid #d5d8dd; outline-offset: 3px; }
 
         @media (max-width: 1279px) {
@@ -686,6 +824,8 @@
             #contact form { padding: 1.25rem !important; }
             .contact-actions { flex-direction: column; }
             .contact-actions .silver-button { width: 100%; }
+            .case-insight-grid { grid-template-columns: 1fr; }
+            .case-insights-hero::after { right: -7rem; opacity: .5; }
         }
         @media (min-width: 1024px) {
             .contact-grid { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 2rem; }

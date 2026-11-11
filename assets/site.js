@@ -10,6 +10,57 @@
         });
     }
 
+    const caseCards = [...document.querySelectorAll("[data-case-card]")];
+    if (caseCards.length) {
+        const search = document.getElementById("case-search");
+        const filterButtons = [...document.querySelectorAll("[data-case-filter]")];
+        const categories = [...document.querySelectorAll("[data-case-category]")];
+        const noResults = document.getElementById("case-no-results");
+        const searchStatus = document.getElementById("case-search-status");
+        let activeFilter = "all";
+
+        const filterCases = () => {
+            const query = search.value.trim().toLocaleLowerCase();
+            let visibleCount = 0;
+            caseCards.forEach((card) => {
+                const matchesCategory = activeFilter === "all" || card.dataset.category === activeFilter;
+                const matchesName = card.dataset.caseName.toLocaleLowerCase().includes(query);
+                card.hidden = !matchesCategory || !matchesName;
+                if (!card.hidden) visibleCount += 1;
+            });
+            categories.forEach((category) => {
+                category.hidden = !category.querySelector("[data-case-card]:not([hidden])");
+            });
+            noResults.hidden = visibleCount > 0;
+            searchStatus.textContent = visibleCount === 1 ? "1 case found." : visibleCount + " cases found.";
+        };
+
+        search.addEventListener("input", filterCases);
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                activeFilter = button.dataset.caseFilter;
+                filterButtons.forEach((filterButton) => {
+                    filterButton.setAttribute("aria-pressed", String(filterButton === button));
+                });
+                filterCases();
+            });
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!(event.target instanceof Element)) return;
+            const toggle = event.target.closest("[data-case-toggle]");
+            if (!toggle) return;
+            const details = document.getElementById(toggle.getAttribute("aria-controls"));
+            if (!details) return;
+            const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+            toggle.setAttribute("aria-expanded", String(!isExpanded));
+            details.hidden = isExpanded;
+            toggle.innerHTML = isExpanded
+                ? 'Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>'
+                : 'Close case <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>';
+        });
+    }
+
     const form = document.getElementById("enquiry-form");
     const serviceSelect = document.getElementById("enquiry-service");
     const formatSelect = document.getElementById("enquiry-format");
