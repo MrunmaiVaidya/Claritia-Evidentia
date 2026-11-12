@@ -143,6 +143,18 @@
     cacheOriginalTranslations();
     applyLanguage(currentLanguage);
 
+    document.querySelectorAll(".faq-section").forEach((section) => {
+        const faqItems = [...section.querySelectorAll(".faq-item")];
+        faqItems.forEach((item) => {
+            item.addEventListener("toggle", () => {
+                if (!item.open) return;
+                faqItems.forEach((otherItem) => {
+                    if (otherItem !== item) otherItem.open = false;
+                });
+            });
+        });
+    });
+
     document.addEventListener("click", (event) => {
         if (!(event.target instanceof Element)) return;
         const languageButton = event.target.closest("[data-language]");

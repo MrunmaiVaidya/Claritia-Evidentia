@@ -1025,3 +1025,112 @@
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
+
+        .faq-section {
+            padding: clamp(4.5rem, 8vw, 7rem) 1rem;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
+            color: var(--text);
+        }
+        .faq-container { width: min(100%, 900px); margin-inline: auto; }
+        .faq-header { max-width: 46rem; margin: 0 auto 2.5rem; text-align: center; }
+        .faq-header .eyebrow { margin-bottom: .7rem; }
+        .faq-header h2 { margin: 0; color: #fff; font-size: var(--type-section); line-height: 1.25; }
+        .faq-header > p:last-child { margin: .85rem auto 0; color: var(--muted); font-size: var(--type-card); line-height: 1.7; }
+        .services-faq-section { margin-top: clamp(3rem, 6vw, 5rem); }
+        .faq-category + .faq-category { margin-top: 2rem; }
+        .faq-category-title {
+            margin: 0 0 .75rem;
+            padding-bottom: .65rem;
+            border-bottom: 1px solid var(--line);
+            color: #e7e9ed;
+            font: 600 var(--type-subheading)/1.35 "Playfair Display", Georgia, serif;
+        }
+        .faq-list { border-top: 1px solid var(--line); }
+        .faq-item { border-bottom: 1px solid var(--line); }
+        .faq-item summary {
+            display: flex;
+            min-height: 4.25rem;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: .95rem .25rem;
+            color: #f2f3f5;
+            font-size: var(--type-body);
+            font-weight: 600;
+            line-height: 1.5;
+            list-style: none;
+            cursor: pointer;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary > span:first-child { min-width: 0; }
+        .faq-icon {
+            position: relative;
+            display: grid;
+            width: 2rem;
+            height: 2rem;
+            flex: 0 0 2rem;
+            place-items: center;
+            border: 1px solid rgba(190, 196, 205, .35);
+            border-radius: 50%;
+            color: var(--silver);
+        }
+        .faq-icon::before { content: "+"; font: 400 1.4rem/1 "Inter", sans-serif; }
+        .faq-item[open] .faq-icon::before { content: "−"; }
+        .faq-item summary:hover { color: #fff; }
+        .faq-item summary:focus-visible { outline-offset: -2px; }
+        .faq-answer {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows .28s ease;
+        }
+        .faq-item[open] .faq-answer { grid-template-rows: 1fr; }
+        .faq-answer-inner { min-height: 0; overflow: hidden; }
+        .faq-answer-inner > p {
+            margin: 0;
+            padding: .1rem 3rem 1.35rem .25rem;
+            color: var(--muted);
+            font-size: var(--type-card);
+            line-height: 1.75;
+            overflow-wrap: anywhere;
+        }
+        .faq-actions { display: flex; flex-wrap: wrap; gap: .75rem; padding: 0 .25rem 1.35rem; }
+        .faq-actions .silver-button { min-height: 3rem; text-decoration: none; }
+        .faq-cta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border: 1px solid var(--line);
+            border-radius: .7rem;
+            background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+        }
+        .faq-cta-copy { min-width: 0; }
+        .faq-cta-copy h3 {
+            margin: 0;
+            color: #fff;
+            font: 600 var(--type-subheading)/1.4 "Playfair Display", Georgia, serif;
+        }
+        .faq-cta .faq-actions { flex: 0 0 auto; padding: 0; }
+        .faq-note {
+            margin: 1.75rem 0 0;
+            padding: 1rem 1.1rem;
+            border-left: 2px solid rgba(190, 196, 205, .55);
+            background: rgba(0, 0, 0, .14);
+            color: var(--muted);
+            font-size: var(--type-label);
+            line-height: 1.65;
+        }
+        @media (max-width: 767px) {
+            .faq-section { padding-inline: 1.1rem; }
+            .faq-header { margin-bottom: 1.75rem; }
+            .faq-item summary { min-height: 4rem; gap: .75rem; padding-block: .85rem; }
+            .faq-answer-inner > p { padding-right: .25rem; }
+            .faq-actions { flex-direction: column; }
+            .faq-actions .silver-button { width: 100%; }
+            .faq-cta { align-items: stretch; flex-direction: column; padding: 1.25rem; }
+        }
