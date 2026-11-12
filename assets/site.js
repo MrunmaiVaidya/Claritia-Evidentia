@@ -153,6 +153,42 @@
                 });
             });
         });
+
+        const moreContent = section.querySelector(".faq-more-content");
+        const moreToggle = section.querySelector(".faq-more-toggle");
+        if (moreContent && moreToggle) {
+            const labels = [...moreToggle.querySelectorAll("[data-i18n]")];
+            const updateMoreState = (expanded) => {
+                moreToggle.setAttribute("aria-expanded", String(expanded));
+                labels.forEach((label, index) => {
+                    label.hidden = index !== Number(expanded);
+                });
+                if (expanded) {
+                    moreContent.hidden = false;
+                    moreContent.inert = false;
+                    moreContent.setAttribute("aria-hidden", "false");
+                    window.requestAnimationFrame(() => {
+                        if (moreToggle.getAttribute("aria-expanded") === "true") {
+                            moreContent.classList.add("is-expanded");
+                        }
+                    });
+                    return;
+                }
+
+                moreContent.inert = true;
+                moreContent.setAttribute("aria-hidden", "true");
+                moreContent.classList.remove("is-expanded");
+                const finishCollapse = (event) => {
+                    if (event.target !== moreContent || event.propertyName !== "grid-template-rows") return;
+                    if (!moreContent.classList.contains("is-expanded")) moreContent.hidden = true;
+                    moreContent.removeEventListener("transitionend", finishCollapse);
+                };
+                moreContent.addEventListener("transitionend", finishCollapse);
+            };
+            moreToggle.addEventListener("click", () => {
+                updateMoreState(moreToggle.getAttribute("aria-expanded") !== "true");
+            });
+        }
     });
 
     document.addEventListener("click", (event) => {

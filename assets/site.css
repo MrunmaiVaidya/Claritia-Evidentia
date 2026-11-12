@@ -1095,6 +1095,31 @@
             line-height: 1.75;
             overflow-wrap: anywhere;
         }
+        .faq-more-content {
+            display: grid;
+            grid-template-rows: 0fr;
+            opacity: 0;
+            transition: grid-template-rows .32s ease, opacity .22s ease;
+        }
+        .faq-more-content.is-expanded { grid-template-rows: 1fr; opacity: 1; }
+        .faq-more-content-inner { min-height: 0; overflow: hidden; }
+        .faq-more-toggle {
+            display: block;
+            min-height: 2.75rem;
+            margin: .25rem auto 0;
+            padding: .65rem 1rem;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            color: var(--silver);
+            font: 500 var(--type-label)/1.4 "Inter", sans-serif;
+            text-align: center;
+            cursor: pointer;
+            transition: color .18s ease, background-color .18s ease, border-color .18s ease, transform .18s ease;
+        }
+        .faq-more-toggle:hover { color: #fff; background: rgba(255,255,255,.055); border-color: var(--line); }
+        .faq-more-toggle:active { transform: translateY(1px); }
+        .faq-more-toggle:focus-visible { outline: 2px solid var(--silver); outline-offset: 3px; }
+        .faq-more-toggle[hidden], .faq-more-toggle span[hidden] { display: none; }
         .faq-actions { display: flex; flex-wrap: wrap; gap: .75rem; padding: 0 .25rem 1.35rem; }
         .faq-actions .silver-button { min-height: 3rem; text-decoration: none; }
         .faq-cta {
