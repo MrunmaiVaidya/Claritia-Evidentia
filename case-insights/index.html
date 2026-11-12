@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore landmark cases involving questioned document examination, handwriting analysis, signature examination and fingerprint identification, with professional forensic insights and lessons from real-world investigations.">
+    <meta name="description" content="Explore selected Indian cases and judicial decisions involving questioned documents, handwriting, signatures, document authentication and fingerprint evidence, with professional forensic insights.">
     <meta name="theme-color" content="#101216">
-    <title>Case Insights | Questioned Document &amp; Fingerprint Expert</title>
+    <title>Indian Case Insights | Questioned Document &amp; Fingerprint Expert</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -49,26 +49,36 @@
                         <span class="brand-title mt-1 block text-xs text-slate-300">Forensic Document & Fingerprint Expert</span>
                     </span>
                 </a>
-                <nav aria-label="Main navigation" class="desktop-nav hidden xl:flex items-center gap-5 text-[11px] font-semibold">
-                    <a href="../home/" data-route="home">Home</a>
-                    <a href="../about/" data-route="about">About Me</a>
-                    <a href="../services/" data-route="services">Services</a>
-                    <a href="../online-consultation/" data-route="online-consultation">Online Consultation</a>
-                    <a href="../case-insights/" data-route="case-insights" aria-current="page">Case Insights</a>
-                    <a href="../contact/" data-route="contact">Contact</a>
+                <nav aria-label="Main navigation" data-i18n-aria-label="navigation.main" class="desktop-nav hidden xl:flex items-center gap-5 text-[11px] font-semibold">
+                    <a href="../home/" data-route="home" data-i18n="nav.home">Home</a>
+                    <a href="../about/" data-route="about" data-i18n="nav.about">About Me</a>
+                    <a href="../services/" data-route="services" data-i18n="nav.services">Services</a>
+                    <a href="../online-consultation/" data-route="online-consultation" data-i18n="nav.consultation">Online Consultation</a>
+                    <a href="../case-insights/" data-route="case-insights" aria-current="page" data-i18n="nav.caseInsights">Case Insights</a>
+                    <a href="../contact/" data-route="contact" data-i18n="nav.contact">Contact</a>
+                    <div class="language-switcher" role="group" data-i18n-aria-label="language.label">
+                        <button type="button" data-language="en" data-i18n-aria-label="language.selectEnglish" aria-pressed="true">EN</button>
+                        <button type="button" data-language="mr" data-i18n-aria-label="language.selectMarathi" aria-pressed="false">मराठी</button>
+                        <button type="button" data-language="hi" data-i18n-aria-label="language.selectHindi" aria-pressed="false">हिंदी</button>
+                    </div>
                 </nav>
                 <details class="mobile-menu relative xl:hidden">
                     <summary class="cursor-pointer rounded border border-slate-700 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500">
-                        <span class="sr-only">Open navigation menu</span>
+                        <span class="sr-only" data-i18n="nav.openMenu">Open navigation menu</span>
                         <i class="fa-solid fa-bars" aria-hidden="true"></i>
                     </summary>
-                    <nav aria-label="Mobile navigation" class="mobile-nav absolute right-0 top-full mt-3 w-60 rounded-lg border p-2 shadow-xl">
-                        <a href="../home/" data-route="home" class="block rounded px-3 py-2.5 text-sm">Home</a>
-                        <a href="../about/" data-route="about" class="block rounded px-3 py-2.5 text-sm">About Me</a>
-                        <a href="../services/" data-route="services" class="block rounded px-3 py-2.5 text-sm">Services</a>
-                        <a href="../online-consultation/" data-route="online-consultation" class="block rounded px-3 py-2.5 text-sm">Online Consultation</a>
-                        <a href="../case-insights/" data-route="case-insights" aria-current="page" class="block rounded px-3 py-2.5 text-sm">Case Insights</a>
-                        <a href="../contact/" data-route="contact" class="block rounded px-3 py-2.5 text-sm">Contact</a>
+                    <nav aria-label="Mobile navigation" data-i18n-aria-label="navigation.mobile" class="mobile-nav absolute right-0 top-full mt-3 w-60 rounded-lg border p-2 shadow-xl">
+                        <a href="../home/" data-route="home" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.home">Home</a>
+                        <a href="../about/" data-route="about" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.about">About Me</a>
+                        <a href="../services/" data-route="services" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.services">Services</a>
+                        <a href="../online-consultation/" data-route="online-consultation" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.consultation">Online Consultation</a>
+                        <a href="../case-insights/" data-route="case-insights" aria-current="page" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.caseInsights">Case Insights</a>
+                        <a href="../contact/" data-route="contact" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.contact">Contact</a>
+                        <div class="language-switcher language-switcher-mobile" role="group" data-i18n-aria-label="language.label">
+                            <button type="button" data-language="en" data-i18n-aria-label="language.selectEnglish" aria-pressed="true">EN</button>
+                            <button type="button" data-language="mr" data-i18n-aria-label="language.selectMarathi" aria-pressed="false">मराठी</button>
+                            <button type="button" data-language="hi" data-i18n-aria-label="language.selectHindi" aria-pressed="false">हिंदी</button>
+                        </div>
                     </nav>
                 </details>
             </div>
@@ -78,190 +88,598 @@
     <main class="case-insights-page">
         <section class="case-insights-hero">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="eyebrow"><i class="fa-solid fa-magnifying-glass mr-2" aria-hidden="true"></i>Forensic case studies</p>
-                <h1>CASE INSIGHTS</h1>
-                <p class="case-insights-subtitle">Landmark Cases in Questioned Documents &amp; Fingerprint Examination</p>
-                <p class="case-insights-intro mt-5">Cases in Questioned Documents &amp; Fingerprint Examination. Explore how forensic evidence has informed investigations and legal proceedings, and the importance of careful interpretation, verification, and context.</p>
+                <p class="eyebrow"><i class="fa-solid fa-magnifying-glass mr-2" aria-hidden="true"></i><span data-i18n="case.pageEyebrow">Forensic case studies</span></p>
+                <h1 data-i18n="case.pageTitle">CASE INSIGHTS</h1>
+                <p class="case-insights-subtitle" data-i18n="case.pageSubtitle">Indian Cases in Questioned Documents &amp; Fingerprint Examination</p>
+                <p class="case-insights-intro mt-5" data-i18n="case.pageIntro">Selected Indian judicial decisions and documented investigations demonstrating the role, evidentiary value and limitations of forensic examination of questioned documents, handwriting, signatures and fingerprints.</p>
+                <p class="case-insights-intro mt-3" data-i18n="case.disclaimer">These case studies are presented for educational and professional awareness purposes and are not legal opinions on the individual matters.</p>
             </div>
         </section>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="case-insights-tools" role="search">
-                <label class="sr-only" for="case-search">Search case name</label>
-                <input id="case-search" class="case-insights-search" type="search" placeholder="Search by case name" autocomplete="off">
-                <button class="case-filter-button" type="button" data-case-filter="all" aria-pressed="true">All cases</button>
-                <button class="case-filter-button" type="button" data-case-filter="documents" aria-pressed="false">Questioned documents</button>
-                <button class="case-filter-button" type="button" data-case-filter="fingerprints" aria-pressed="false">Fingerprints</button>
+                <label class="sr-only" for="case-search" data-i18n="case.searchLabel">Search case name</label>
+                <input id="case-search" class="case-insights-search" type="search" placeholder="Search by case name or court" data-i18n-placeholder="case.searchPlaceholder" autocomplete="off">
+                <button class="case-filter-button" type="button" data-case-filter="all" aria-pressed="true" data-i18n="case.filterAll">All cases</button>
+                <button class="case-filter-button" type="button" data-case-filter="documents" aria-pressed="false" data-i18n="case.filterDocuments">Questioned Documents</button>
+                <button class="case-filter-button" type="button" data-case-filter="handwriting" aria-pressed="false" data-i18n="case.filterHandwriting">Handwriting</button>
+                <button class="case-filter-button" type="button" data-case-filter="signatures" aria-pressed="false" data-i18n="case.filterSignatures">Signatures</button>
+                <button class="case-filter-button" type="button" data-case-filter="authentication" aria-pressed="false" data-i18n="case.filterAuthentication">Document Authentication</button>
+                <button class="case-filter-button" type="button" data-case-filter="fingerprints" aria-pressed="false" data-i18n="case.filterFingerprints">Fingerprints</button>
             </div>
             <p id="case-search-status" class="sr-only" role="status" aria-live="polite"></p>
 
+            <article class="case-insight-card case-featured-card" data-case-card data-category="documents handwriting" data-case-name="Ram Narain v. State of Uttar Pradesh">
+                <div class="case-insight-summary">
+                    <p class="case-insight-meta"><span data-i18n="case.featured">Featured case</span><span>1973</span><span>Supreme Court of India</span></p>
+                    <h3>Ram Narain v. State of Uttar Pradesh</h3>
+                    <p class="case-insight-area"><i class="fa-solid fa-pen-nib mr-1" aria-hidden="true"></i><span data-i18n="case.areaHandwriting">Handwriting / questioned documents</span></p>
+                    <p class="case-insight-teaser" data-i18n="case.teaserRam">The Supreme Court considered the evidentiary value of handwriting-expert opinion, the role of specimen material and the court’s task in evaluating disputed writings alongside all the other evidence on record.</p>
+                    <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-ram-narain-details"><span data-i18n="case.readFull">Read Full Case Insight</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                </div>
+                <div class="case-insight-details" id="case-ram-narain-details" hidden>
+                    <section class="case-at-a-glance" data-case-intro="ramNarain">
+                        <h3><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span data-i18n="case.glance">Case at a Glance</span></h3>
+                        <p class="case-glance-lead">Two anonymous ransom letters made disputed handwriting central to a criminal appeal that reached the Supreme Court.</p>
+                        <div class="case-glance-section">
+                            <h4 data-i18n="case.story">The Story</h4>
+                            <p>The Supreme Court’s judgment records that five-year-old Mannu went missing in Kanpur in August 1964. A postcard and, later, an inland letter demanded ransom for his return. The child was recovered in January 1965. The prosecution alleged that Ram Narain had written the two anonymous letters; he denied authorship.</p>
+                            <p>The conviction under review was for attempted extortion and rested on the conclusion that Ram Narain wrote the letters. A handwriting expert gave evidence for the prosecution. The trial court, Sessions Court and High Court accepted the opinion after examining the writings themselves. The appeal therefore raised a focused question about how much weight expert opinion and a court’s own comparison may carry.</p>
+                        </div>
+                        <div class="case-glance-section">
+                            <h4 data-i18n="case.forensicConnection">The Forensic Connection</h4>
+                            <p>The questioned items were the two ransom letters; comparison material included writings attributed to Ram Narain. The Court explained that handwriting-expert opinion is relevant but fallible and must be treated cautiously. A court may compare writings to assess the expert’s reasoning, not to assume the role of a technical examiner. In this case, the lower courts’ comparisons and the expert evidence were considered together.</p>
+                            <h4 data-i18n="case.keyQuestion">The Key Question</h4>
+                            <p class="case-glance-question">Could the handwriting evidence, assessed with the courts’ own comparison and the record, support the finding that Ram Narain wrote the letters?</p>
+                        </div>
+                        <div class="case-glance-section">
+                            <h4 data-i18n="case.whyMatters">Why This Case Matters</h4>
+                            <p>It illustrates both caution and judicial evaluation: expert opinion is not automatically conclusive, but the Court did not treat it as unusable. The decision turns on the record and how the courts assessed it, not on a general rule that handwriting evidence alone always proves authorship.</p>
+                        </div>
+                        <div class="case-snapshot">
+                            <h4 class="case-snapshot-heading" data-i18n="case.snapshot">Case Snapshot</h4>
+                            <dl>
+                                <div><dt data-i18n="case.year">Year</dt><dd>1973</dd></div>
+                                <div><dt data-i18n="case.court">Court</dt><dd>Supreme Court of India</dd></div>
+                                <div><dt data-i18n="case.location">Location</dt><dd>Kanpur, Uttar Pradesh</dd></div>
+                                <div><dt data-i18n="case.forensicArea">Forensic area</dt><dd>Handwriting examination</dd></div>
+                                <div><dt data-i18n="case.evidenceType">Evidence</dt><dd>Two anonymous ransom letters and comparison writings</dd></div>
+                                <div><dt data-i18n="case.keyIssue">Key issue</dt><dd>Authorship and weight of handwriting-expert opinion</dd></div>
+                            </dl>
+                        </div>
+                        <div class="case-glance-section">
+                            <h4 data-i18n="case.whyRead">Why Read This Case?</h4>
+                            <ul class="case-why-read">
+                                <li>See how an expert opinion and a court’s comparison were assessed together.</li>
+                                <li>Understand why the judgment warns against treating expert opinion as infallible.</li>
+                                <li>Distinguish the case-specific outcome from a broad claim about proof of authorship.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h3 class="case-analysis-title" data-i18n="case.detailedAnalysis">Detailed Case Analysis</h3>
+                    <dl>
+                        <div><dt>Case</dt><dd>Ram Narain v. State of Uttar Pradesh</dd></div>
+                        <div><dt>Background</dt><dd>The case involved anonymous ransom letters and a dispute over whether the accused authored them. The court was required to assess the probative value of handwriting-expert evidence.</dd></div>
+                        <div><dt>Forensic question</dt><dd>Whether disputed anonymous letters were written by the accused, and whether expert opinion could safely be relied upon without isolating it from the wider evidence.</dd></div>
+                        <div><dt>Evidence examined</dt><dd>Anonymous letters, specimen writings, admitted writings and the handwriting-expert opinion comparing the disputed and known material.</dd></div>
+                        <div><dt>Court's approach</dt><dd>The Supreme Court treated handwriting-expert evidence as relevant but not infallible. It emphasised that the court must assess the quality of the comparison material and the total evidentiary context before giving weight to expert opinion.</dd></div>
+                        <div><dt>Forensic insight</dt><dd>Handwriting examination is an opinion-based forensic discipline. Its strength depends on the quality and suitability of the comparison material and the overall evidentiary context.</dd></div>
+                    </dl>
+                    <p class="case-insight-sources"><strong>Sources &amp; Further Reading:</strong> <a href="https://indiankanoon.org/doc/1536178/" target="_blank" rel="noopener noreferrer">Ram Narain v. State of Uttar Pradesh, Supreme Court of India, 5 April 1973</a>, 1973 2 SCC 86; 1973 AIR 2200.</p>
+                </div>
+            </article>
+
             <section class="case-category" data-case-category="documents" aria-labelledby="document-cases-heading">
-                <h2 class="case-category-heading" id="document-cases-heading"><i class="fa-solid fa-file-signature" aria-hidden="true"></i>Questioned Documents &amp; Handwriting</h2>
+                <h2 class="case-category-heading" id="document-cases-heading"><i class="fa-solid fa-file-signature" aria-hidden="true"></i><span data-i18n="case.categoryDocuments">Questioned Documents</span></h2>
                 <div class="case-insight-grid">
-                    <article class="case-insight-card" data-case-card data-category="documents" data-case-name="Dreyfus Affair">
+                    <article class="case-insight-card" data-case-card data-category="documents handwriting" data-case-name="Sukhram v. State of Himachal Pradesh">
                         <div class="case-insight-summary">
-                            <p class="case-insight-meta"><span>France</span><span>1894–1906</span></p>
-                            <h3>The Dreyfus Affair</h3>
-                            <p class="case-insight-area"><i class="fa-solid fa-pen-nib mr-1" aria-hidden="true"></i>Handwriting examination · disputed authorship</p>
-                            <p class="case-insight-teaser">A contested handwriting comparison of a military memorandum became part of a notorious wrongful-conviction case.</p>
-                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-dreyfus-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            <p class="case-insight-meta"><span>2016</span><span>Supreme Court of India</span></p>
+                            <h3>Sukhram v. State of Himachal Pradesh</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-pen-nib mr-1" aria-hidden="true"></i><span data-i18n="case.areaSpecimen">Specimen handwriting / expert evidence</span></p>
+                            <p class="case-insight-teaser" data-i18n="case.teaserSukhram">The judgment underscores the importance of suitable specimen material and the limits of relying on a handwriting opinion without proper evidentiary procedure.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-sukhram-details"><span data-i18n="case.read">Read Case Insight</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
                         </div>
-                        <div class="case-insight-details" id="case-dreyfus-details" hidden>
+                        <div class="case-insight-details" id="case-sukhram-details" hidden>
+                            <section class="case-at-a-glance" data-case-intro="sukhram">
+                                <h3><i class="fa-solid fa-pen-nib" aria-hidden="true"></i><span data-i18n="case.glance">Case at a Glance</span></h3>
+                                <p class="case-glance-lead">A specimen-writing question also raises a procedural one: when could investigators obtain comparison material, and which rules applied at the time?</p>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.story">The Story</h4>
+                                    <p>The case is identified as a 2016 Supreme Court decision in Sukhram v. State of Himachal Pradesh. Its relevance to questioned-document practice is commonly discussed through the rules for obtaining specimen handwriting or signatures. The date matters because Section 311A of the Code of Criminal Procedure, which provides a procedure for directing a person to provide specimen signatures or handwriting, came into force in 2006.</p>
+                                    <p>A later Delhi trial-court judgment cites Sukhram for the proposition that Section 311A operates prospectively. This helps frame the legal issue, but it does not by itself establish what particular writings were examined in Sukhram, what an examiner concluded, or that a disputed authorship finding was made. Those case-specific details should be taken from the Supreme Court’s own record, not inferred from a later citation.</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.forensicConnection">The Forensic Connection</h4>
+                                    <p>Specimen or known material is the basis against which questioned writing may be compared. Its identity, provenance, date, manner of collection and suitability are distinct matters from the later evaluation of an expert’s opinion. A procedural ruling on when a specimen was lawfully obtained is not a scientific conclusion about whether two writings share an author.</p>
+                                    <h4 data-i18n="case.keyQuestion">The Key Question</h4>
+                                    <p class="case-glance-question">Which procedure applied to obtaining specimen handwriting or signatures at the relevant time, and what can that procedural ruling establish?</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyMatters">Why This Case Matters</h4>
+                                    <p>It encourages readers to separate the legal authority to obtain a sample from the scientific adequacy of the comparison. The present page does not claim a case-specific expert conclusion beyond what the cited later decision reports.</p>
+                                </div>
+                                <div class="case-snapshot">
+                                    <h4 class="case-snapshot-heading" data-i18n="case.snapshot">Case Snapshot</h4>
+                                    <dl>
+                                        <div><dt data-i18n="case.year">Year</dt><dd>2016</dd></div>
+                                        <div><dt data-i18n="case.court">Court</dt><dd>Supreme Court of India</dd></div>
+                                        <div><dt data-i18n="case.location">Location</dt><dd>Himachal Pradesh</dd></div>
+                                        <div><dt data-i18n="case.forensicArea">Forensic area</dt><dd>Specimen handwriting and signatures</dd></div>
+                                        <div><dt data-i18n="case.evidenceType">Evidence</dt><dd>Specimen material discussed in relation to Section 311A CrPC</dd></div>
+                                        <div><dt data-i18n="case.keyIssue">Key issue</dt><dd>Prospective application of the specimen-taking procedure</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyRead">Why Read This Case?</h4>
+                                    <ul class="case-why-read">
+                                        <li>Separate sample collection procedure from the later comparison opinion.</li>
+                                        <li>Recognize that specimen provenance and suitability affect forensic evaluation.</li>
+                                        <li>Read subsequent citations carefully: they may summarize only a narrow holding.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <h3 class="case-analysis-title" data-i18n="case.detailedAnalysis">Detailed Case Analysis</h3>
                             <dl>
-                                <div><dt>Background</dt><dd>In 1894, French army officer Alfred Dreyfus was accused of passing military information to Germany. The case centered in part on an anonymous memorandum known as the bordereau.</dd></div>
-                                <div><dt>Forensic question</dt><dd>Could the handwriting on the bordereau be attributed to Dreyfus?</dd></div>
-                                <div><dt>Evidence examined</dt><dd>The bordereau and handwriting specimens used by contemporary examiners; the prosecution also relied on a secret dossier that was not disclosed to the defense.</dd></div>
-                                <div><dt>Examination / methodology</dt><dd>Military handwriting experts compared writing characteristics. Their opinions were divided; this historical examination predated modern questioned-document practice and should not be equated with current standards.</dd></div>
-                                <div><dt>Key findings</dt><dd>The handwriting opinions were contested rather than a unanimous or conclusive identification. Later scrutiny focused on other potential authors, including Ferdinand Walsin Esterhazy.</dd></div>
-                                <div><dt>Role of forensic evidence</dt><dd>The handwriting claim helped implicate Dreyfus, but it was one part of a case also driven by undisclosed evidence and institutional decisions; it did not independently establish guilt.</dd></div>
-                                <div><dt>Outcome / significance</dt><dd>Dreyfus was convicted, later pardoned, and exonerated and reinstated in 1906. The affair remains a caution about disputed expertise, disclosure, and confirmation bias.</dd></div>
+                                <div><dt>Background</dt><dd>The case involved issues surrounding specimen handwriting and signatures used for comparison in criminal proceedings.</dd></div>
+                                <div><dt>Forensic question</dt><dd>How should a court assess handwriting or signature comparison where the comparison material itself may be disputed or inadequately obtained?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Known and disputed writings, specimen materials and expert evidence on handwriting comparison.</dd></div>
+                                <div><dt>Legal and forensic significance</dt><dd>The judgment highlights that specimen material matters greatly. Expert opinion is only as strong as the comparison material supplied to the examiner and the circumstances under which it was obtained.</dd></div>
                             </dl>
-                            <p class="case-insight-note"><strong>Forensic Insight:</strong> A handwriting opinion must be presented with its limitations and alternatives. Independent review, transparent reasoning, and access to relevant evidence matter.</p>
-                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://www.britannica.com/event/Dreyfus-affair" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica, “Dreyfus affair”</a>.</p>
+                            <p class="case-insight-note"><strong>Forensic insight:</strong> A questioned-document examination is only as strong as the comparison material and the evidentiary procedure that produced it.</p>
+                            <p class="case-insight-sources"><strong>Sources &amp; Further Reading:</strong> <a href="https://indiankanoon.org/doc/142029854/" target="_blank" rel="noopener noreferrer">State v. Satish, Delhi District Court, 27 July 2018</a> (later judgment citing Sukhram v. State of Himachal Pradesh, Criminal Appeal No. 224/2012, dated 25 July 2016, on the prospective operation of Section 311A CrPC). This is a secondary reference, not the Supreme Court judgment itself.</p>
                         </div>
                     </article>
 
-                    <article class="case-insight-card" data-case-card data-category="documents" data-case-name="Lindbergh kidnapping">
+                    <article class="case-insight-card" data-case-card data-category="documents handwriting" data-case-name="Akshardham Investigation">
                         <div class="case-insight-summary">
-                            <p class="case-insight-meta"><span>United States</span><span>1932–1936</span></p>
-                            <h3>The Lindbergh Kidnapping</h3>
-                            <p class="case-insight-area"><i class="fa-solid fa-file-lines mr-1" aria-hidden="true"></i>Ransom-note handwriting · questioned documents</p>
-                            <p class="case-insight-teaser">Handwriting comparison of ransom notes was presented alongside other evidence in the investigation of the kidnapping of Charles Lindbergh’s son.</p>
-                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-lindbergh-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            <p class="case-insight-meta"><span data-i18n="case.investigation">Investigation</span><span data-i18n="case.documentedExamination">Documented forensic examination</span></p>
+                            <h3>Akshardham Investigation — Handwriting Examination</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-file-lines mr-1" aria-hidden="true"></i><span data-i18n="case.areaQuestionedWriting">Questioned writing / investigative analysis</span></p>
+                            <p class="case-insight-teaser" data-i18n="case.teaserAkshardham">Handwriting examination was used during the investigation to compare questioned writings with known specimen material, while maintaining a clear distinction between forensic analysis and court findings.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-akshardham-details"><span data-i18n="case.read">Read Case Insight</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
                         </div>
-                        <div class="case-insight-details" id="case-lindbergh-details" hidden>
+                        <div class="case-insight-details" id="case-akshardham-details" hidden>
+                            <section class="case-at-a-glance" data-case-intro="akshardham">
+                                <h3><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span data-i18n="case.glance">Case at a Glance</span></h3>
+                                <p class="case-glance-lead">The entry describes questioned-writing work during the Akshardham investigation—but its current source note does not identify a report or judgment documenting that examination.</p>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.story">The Story</h4>
+                                    <p>This page presents the Akshardham investigation as an example of questioned-document analysis, with disputed writings considered against known specimen material. That description raises important questions about the origin of the questioned item, how comparison samples were collected, and whether an examiner made a finding that was later tested in court.</p>
+                                    <p>However, the current case entry links no named forensic report, judgment, or official document that establishes those details. For that reason, this overview does not state who wrote any questioned material, what a comparison concluded, or whether a particular court relied on such an opinion. An investigation label and a general description of forensic work are not enough to verify a case-specific result.</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.forensicConnection">The Forensic Connection</h4>
+                                    <p>In a properly documented handwriting examination, the questioned writing and comparison specimens should be identified, their sources recorded, and the examiner’s scope and conclusion accurately reported. Even then, an investigative opinion and a judicial finding are distinct. The underlying document and the relevant court record are needed to explain what happened in this matter.</p>
+                                    <h4 data-i18n="case.keyQuestion">The Key Question</h4>
+                                    <p class="case-glance-question">What primary record supports the claim that questioned handwriting was examined in this investigation, and what did that record actually conclude?</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyEntryMatters">Why This Entry Matters</h4>
+                                    <p>It is a reminder to check the source trail before repeating forensic claims. Until a case-specific report or judgment is linked, this entry should be read as a topic for verification—not as proof of authorship, an expert result, or a court finding.</p>
+                                </div>
+                                <div class="case-snapshot">
+                                    <h4 class="case-snapshot-heading" data-i18n="case.snapshot">Case Snapshot</h4>
+                                    <dl>
+                                        <div><dt data-i18n="case.year">Year</dt><dd>Not established by the current entry</dd></div>
+                                        <div><dt data-i18n="case.court">Court</dt><dd>No case-specific judgment cited</dd></div>
+                                        <div><dt data-i18n="case.location">Location</dt><dd>Akshardham investigation (as identified by this entry)</dd></div>
+                                        <div><dt data-i18n="case.forensicArea">Forensic area</dt><dd>Questioned writing, as described in the entry</dd></div>
+                                        <div><dt data-i18n="case.evidenceType">Evidence</dt><dd>Specific documents and specimens are not identified in a linked primary source</dd></div>
+                                        <div><dt data-i18n="case.keyIssue">Key issue</dt><dd>Verifying the source and limits of the reported examination</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyRead">Why Read This Case?</h4>
+                                    <ul class="case-why-read">
+                                        <li>Learn to distinguish an investigative claim from an established court finding.</li>
+                                        <li>Ask for the report, questioned item, comparison standards and provenance.</li>
+                                        <li>See why a source gap should be disclosed rather than filled with assumption.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <h3 class="case-analysis-title" data-i18n="case.detailedAnalysis">Detailed Case Analysis</h3>
                             <dl>
-                                <div><dt>Background</dt><dd>Charles Lindbergh’s infant son was kidnapped from the family home in New Jersey in 1932. A series of ransom notes and communications followed.</dd></div>
-                                <div><dt>Forensic question</dt><dd>Did the ransom-note handwriting correspond to writing associated with suspect Bruno Richard Hauptmann?</dd></div>
-                                <div><dt>Evidence examined</dt><dd>Ransom notes and handwriting exemplars attributed to Hauptmann. The prosecution also presented other evidence, including evidence concerning ransom money and the child’s remains.</dd></div>
-                                <div><dt>Examination / methodology</dt><dd>Handwriting experts compared writing in the notes with known and requested samples. Their comparison was presented as expert testimony at trial.</dd></div>
-                                <div><dt>Key findings</dt><dd>Prosecution experts testified that the notes were written by Hauptmann. The identification was expert opinion, not an instrument-based certainty, and was part of a wider evidentiary case.</dd></div>
-                                <div><dt>Role of forensic evidence</dt><dd>The ransom-note comparison linked the suspect to communications in the case; it should not be described as the sole basis for the verdict.</dd></div>
-                                <div><dt>Outcome / significance</dt><dd>Hauptmann was convicted and executed in 1936. The case is frequently discussed in the history of forensic document examination and the presentation of expert testimony.</dd></div>
+                                <div><dt>Background</dt><dd>Documented investigative reports refer to questioned writings and comparison material examined during the Akshardham investigation.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Whether the questioned writings could be associated with known specimens and what forensic significance should be attached to the result.</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Disputed writings, specimen handwriting and comparison material used by forensic document examiners.</dd></div>
+                                <div><dt>Forensic significance</dt><dd>Questioned-document examination may provide investigative leads, but the result must be interpreted within the full evidentiary record and should not be treated as a substitute for judicial findings.</dd></div>
                             </dl>
-                            <p class="case-insight-note"><strong>Forensic Insight:</strong> Separate observable similarities from an authorship conclusion, explain the comparison material and its limitations, and consider the opinion within the full case context.</p>
-                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://www.fbi.gov/history/famous-cases/lindbergh-kidnapping" target="_blank" rel="noopener noreferrer">Federal Bureau of Investigation, “Lindbergh Kidnapping”</a>.</p>
+                            <p class="case-insight-note"><strong>Forensic insight:</strong> Investigative handwriting examination can assist an inquiry, but the forensic result must be contextualised and not overstated.</p>
+                            <p class="case-insight-sources"><strong>Sources &amp; Further Reading:</strong> No case-specific forensic report or judgment is identified in the source note for this entry. The claimed handwriting examination and any result should be verified against a primary investigative or court record before being presented as established.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="case-category" data-case-category="signatures" aria-labelledby="signature-cases-heading">
+                <h2 class="case-category-heading" id="signature-cases-heading"><i class="fa-solid fa-signature" aria-hidden="true"></i><span data-i18n="case.categorySignatures">Signatures</span></h2>
+                <div class="case-insight-grid">
+                    <article class="case-insight-card" data-case-card data-category="documents signatures" data-case-name="Bande Siva Shankara Srinivasa Prasad v. Ravi Surya Prakash Babu & Others">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span>2015</span><span data-i18n="case.fullBench">High Court / Full Bench</span></p>
+                            <h3>Bande Siva Shankara Srinivasa Prasad v. Ravi Surya Prakash Babu &amp; Others</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-pen-fancy mr-1" aria-hidden="true"></i><span data-i18n="case.areaSignatures">Signature examination / contemporaneity</span></p>
+                            <p class="case-insight-teaser" data-i18n="case.teaserBande">The case addressed whether a disputed signature could be referred for expert examination when the available admitted signatures were from a substantially different period.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-bande-details"><span data-i18n="case.read">Read Case Insight</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-bande-details" hidden>
+                            <section class="case-at-a-glance" data-case-intro="bande">
+                                <h3><i class="fa-solid fa-signature" aria-hidden="true"></i><span data-i18n="case.glance">Case at a Glance</span></h3>
+                                <p class="case-glance-lead">A disputed signature, a substantial time gap, and a technical question sent by a Full Bench to the Central Forensic Science Laboratory.</p>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.story">The Story</h4>
+                                    <p>This 2015 Full Bench decision of the Andhra Pradesh High Court arose from connected civil revision petitions. The reference exposed inconsistent approaches in lower-court decisions: some treated a long interval between a disputed signature and admitted comparison signatures as a reason not to seek expert help; others considered expert comparison possible despite the gap.</p>
+                                    <p>The Full Bench asked whether contemporaneity was an essential precondition to sending questioned handwriting or signatures for expert opinion. Rather than answer a scientific question by assumption, the Court sought a report from the Central Forensic Science Laboratory in Hyderabad on when contemporaneous standards are normally helpful, what “contemporaneous” means, and whether comparison is possible without such material.</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.forensicConnection">The Forensic Connection</h4>
+                                    <p>The CFSL report described contemporaneous writings as preferred for better evaluation, but not invariably necessary. It explained that a meaningful opinion depends on the available data, comparable writing features, natural variation and the circumstances of the questioned material. The legal issue—whether a civil court may refer signatures for examination—is separate from the examiner’s scientific assessment of whether the supplied standards support a conclusion.</p>
+                                    <h4 data-i18n="case.keyQuestion">The Key Question</h4>
+                                    <p class="case-glance-question">Does a time gap automatically prevent expert comparison, or does suitability depend on the material and circumstances?</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyMatters">Why This Case Matters</h4>
+                                    <p>The decision resists a simplistic “same period or no examination” rule. It shows why an examiner may need to evaluate the age, provenance and quality of each standard—and may need to qualify or decline an opinion when the available comparison material is inadequate.</p>
+                                </div>
+                                <div class="case-snapshot">
+                                    <h4 class="case-snapshot-heading" data-i18n="case.snapshot">Case Snapshot</h4>
+                                    <dl>
+                                        <div><dt data-i18n="case.year">Year</dt><dd>2015</dd></div>
+                                        <div><dt data-i18n="case.court">Court</dt><dd>Andhra Pradesh High Court, Full Bench</dd></div>
+                                        <div><dt data-i18n="case.location">Location</dt><dd>Andhra Pradesh</dd></div>
+                                        <div><dt data-i18n="case.forensicArea">Forensic area</dt><dd>Questioned-signature comparison</dd></div>
+                                        <div><dt data-i18n="case.evidenceType">Evidence</dt><dd>Disputed and admitted signatures; CFSL report</dd></div>
+                                        <div><dt data-i18n="case.keyIssue">Key issue</dt><dd>Effect of time gap and contemporaneity</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyRead">Why Read This Case?</h4>
+                                    <ul class="case-why-read">
+                                        <li>Learn the distinction between a court’s referral decision and the expert’s conclusion.</li>
+                                        <li>Understand why contemporaneous standards are useful but not an absolute rule.</li>
+                                        <li>See how CFSL input informed a legal question without replacing judicial judgment.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <h3 class="case-analysis-title" data-i18n="case.detailedAnalysis">Detailed Case Analysis</h3>
+                            <dl>
+                                <div><dt>Background</dt><dd>The dispute concerned a questioned signature and the suitability of admitted signature standards for the purpose of comparison.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Can a disputed signature be examined when the known signatures are from a substantially different period and may not be contemporaneous?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Disputed signatures, admitted signatures and expert evidence. The Central Forensic Science Laboratory was involved in the proceedings.</dd></div>
+                                <div><dt>Forensic significance</dt><dd>The case highlights that signature comparison is not merely a visual exercise. The age, provenance and suitability of the comparison signatures are critical to any reliable opinion.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic insight:</strong> Suitable, contemporaneous and properly sourced known signatures are essential to meaningful comparison.</p>
+                            <p class="case-insight-sources"><strong>Sources &amp; Further Reading:</strong> <a href="https://indiankanoon.org/doc/143607685/" target="_blank" rel="noopener noreferrer">Bande Siva Shankara Srinivasa Prasad v. Ravi Surya Prakash Babu and Others, Andhra Pradesh High Court (Full Bench), 18 December 2015</a>, AIR 2016 Hyderabad 118. The judgment reproduces the CFSL Hyderabad report on contemporaneous handwriting and signatures.</p>
                         </div>
                     </article>
 
-                    <article class="case-insight-card" data-case-card data-category="documents" data-case-name="Hitler Diaries">
+                    <article class="case-insight-card" data-case-card data-category="documents signatures" data-case-name="Sohrabuddin Sheikh / Tulsiram Prajapati Investigation">
                         <div class="case-insight-summary">
-                            <p class="case-insight-meta"><span>West Germany</span><span>1983</span></p>
-                            <h3>The Hitler Diaries</h3>
-                            <p class="case-insight-area"><i class="fa-solid fa-file-circle-check mr-1" aria-hidden="true"></i>Document authentication · handwriting · materials analysis</p>
-                            <p class="case-insight-teaser">A set of purported diaries attributed to Adolf Hitler was exposed as forged after scrutiny of the documents and their materials.</p>
-                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-diaries-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            <p class="case-insight-meta"><span data-i18n="case.investigation">Investigation</span><span data-i18n="case.documentedReview">Documented forensic review</span></p>
+                            <h3>Sohrabuddin Sheikh / Tulsiram Prajapati Investigation</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-pen-alt mr-1" aria-hidden="true"></i><span data-i18n="case.areaSignatureComparison">Signature comparison / questioned documents</span></p>
+                            <p class="case-insight-teaser" data-i18n="case.teaserSohrabuddin">Disputed signatures and documentary records were scrutinised in the wider investigation, with expert evidence considered as part of a larger evidentiary matrix.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-sohrabuddin-details"><span data-i18n="case.read">Read Case Insight</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
                         </div>
-                        <div class="case-insight-details" id="case-diaries-details" hidden>
+                        <div class="case-insight-details" id="case-sohrabuddin-details" hidden>
+                            <section class="case-at-a-glance" data-case-intro="sohrabuddin">
+                                <h3><i class="fa-solid fa-file-signature" aria-hidden="true"></i><span data-i18n="case.glance">Case at a Glance</span></h3>
+                                <p class="case-glance-lead">This entry points to signature and document scrutiny in a wider investigation, but does not yet identify the particular disputed record or expert report.</p>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.story">The Story</h4>
+                                    <p>The case-card title associates the entry with the Sohrabuddin Sheikh and Tulsiram Prajapati investigation. Its summary refers to disputed signatures and documentary records within that broader matter. The current source note, however, names no judgment, forensic laboratory report, document, or specific finding that would let a reader trace the claimed signature examination.</p>
+                                    <p>That distinction matters in a complex investigation: allegations, investigative steps, expert opinions and court findings are not interchangeable. Without the underlying record, this page cannot responsibly say which signature was questioned, what known standards were available, who examined it, or how the result affected any proceeding. The analysis below therefore explains the kinds of issues that document examination may raise, rather than attributing an unverified conclusion to a person or court.</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.forensicConnection">The Forensic Connection</h4>
+                                    <p>A reliable account would identify the document and its provenance, the questioned and admitted signatures, the examiner and method, and the context in which the opinion was considered. A reported comparison is not, on its own, proof of the truth of a surrounding allegation; nor is an allegation evidence that a forensic examination occurred.</p>
+                                    <h4 data-i18n="case.keyQuestion">The Key Question</h4>
+                                    <p class="case-glance-question">Which identified document and primary record support the reported signature comparison, and what can that evidence establish?</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyEntryMatters">Why This Entry Matters</h4>
+                                    <p>It is a useful prompt to map the chain from original document to expert opinion to judicial treatment. Until those sources are cited, claims about a specific signature finding should remain provisional and should not be presented as a court’s conclusion.</p>
+                                </div>
+                                <div class="case-snapshot">
+                                    <h4 class="case-snapshot-heading" data-i18n="case.snapshot">Case Snapshot</h4>
+                                    <dl>
+                                        <div><dt data-i18n="case.year">Year</dt><dd>Not established by the current entry</dd></div>
+                                        <div><dt data-i18n="case.court">Court</dt><dd>No case-specific judgment cited</dd></div>
+                                        <div><dt data-i18n="case.location">Location</dt><dd>Not specified in a linked primary source</dd></div>
+                                        <div><dt data-i18n="case.forensicArea">Forensic area</dt><dd>Signature comparison, as described in the entry</dd></div>
+                                        <div><dt data-i18n="case.evidenceType">Evidence</dt><dd>Disputed document and standards are not identified in a linked source</dd></div>
+                                        <div><dt data-i18n="case.keyIssue">Key issue</dt><dd>Provenance, comparison basis and evidentiary context</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyRead">Why Read This Case?</h4>
+                                    <ul class="case-why-read">
+                                        <li>Keep investigative allegations separate from proven facts and judicial findings.</li>
+                                        <li>Trace the document, exemplars, report and treatment in the record.</li>
+                                        <li>Recognize the limits of an entry whose primary sources are not yet identified.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <h3 class="case-analysis-title" data-i18n="case.detailedAnalysis">Detailed Case Analysis</h3>
                             <dl>
-                                <div><dt>Background</dt><dd>In 1983, a West German magazine announced the discovery of diaries represented as Adolf Hitler’s personal writings. They were published before their authenticity was adequately established.</dd></div>
-                                <div><dt>Forensic question</dt><dd>Were the manuscripts genuine historical documents from Hitler’s period, and were they written by him?</dd></div>
-                                <div><dt>Evidence examined</dt><dd>The diaries’ handwriting and physical materials, including paper and ink, were examined.</dd></div>
-                                <div><dt>Examination / methodology</dt><dd>Examination combined handwriting assessment with scientific testing of the document materials and checks against historical details. Testing indicated postwar materials, inconsistent with the claimed provenance.</dd></div>
-                                <div><dt>Key findings</dt><dd>The diaries were modern forgeries, later attributed to Konrad Kujau. The materials evidence contradicted the claim that they were wartime originals.</dd></div>
-                                <div><dt>Role of forensic evidence</dt><dd>Scientific material analysis was decisive in disproving authenticity; handwriting resemblance or an initial expert endorsement could not override contradictory physical evidence.</dd></div>
-                                <div><dt>Outcome / significance</dt><dd>The publication was withdrawn and the forgery became a major example of failed document authentication and inadequate source verification.</dd></div>
+                                <div><dt>Background</dt><dd>Documented materials in the matter refer to disputed signatures and questioned documents examined in the course of the investigation and proceedings.</dd></div>
+                                <div><dt>Forensic question</dt><dd>How should signature comparison and questioned-document examination be weighed where allegations, investigative findings, expert evidence and court findings must be kept distinct?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Disputed signatures, related documentary records, and expert opinions from questioned-document examination.</dd></div>
+                                <div><dt>Forensic significance</dt><dd>Signature comparison can become important when documentary records are disputed, but the examiner’s conclusion must be considered together with document provenance and surrounding evidence.</dd></div>
                             </dl>
-                            <p class="case-insight-note"><strong>Forensic Insight:</strong> Authenticate the whole document. Handwriting must be assessed alongside paper, ink, provenance, chronology, and independent historical evidence.</p>
-                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://time.com/archive/6859825/hitlers-forged-diaries/" target="_blank" rel="noopener noreferrer">TIME, “Hitler’s Forged Diaries”</a>; <a href="https://www.britannica.com/topic/Hitler-Diaries" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica, “Hitler Diaries”</a>.</p>
+                            <p class="case-insight-note"><strong>Forensic insight:</strong> Signature examination gains value only when the document, provenance and evidence context are properly considered.</p>
+                            <p class="case-insight-sources"><strong>Sources &amp; Further Reading:</strong> No case-specific government forensic report or court decision is identified in the current entry. The described signature evidence and its treatment require a primary source before any case-specific conclusion can be attributed.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="case-category" data-case-category="authentication" aria-labelledby="authentication-cases-heading">
+                <h2 class="case-category-heading" id="authentication-cases-heading"><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i><span data-i18n="case.categoryAuthentication">Document Authentication</span></h2>
+                <div class="case-insight-grid">
+                    <article class="case-insight-card" data-case-card data-category="documents authentication" data-case-name="Arun Bhelke & Kanchan Nanaware Case">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span data-i18n="case.investigation">Investigation</span><span data-i18n="case.identityDocuments">Identity documents</span></p>
+                            <h3>Arun Bhelke &amp; Kanchan Nanaware Case</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-id-card mr-1" aria-hidden="true"></i><span data-i18n="case.areaIdentityDocuments">Handwriting / signature / identity document scrutiny</span></p>
+                            <p class="case-insight-teaser" data-i18n="case.teaserArun">The matter involved disputed writings and signatures on identity-linked records, illustrating how questioned-document examination can assist investigation into alleged aliases or identity documents.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-arun-details"><span data-i18n="case.read">Read Case Insight</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-arun-details" hidden>
+                            <section class="case-at-a-glance" data-case-intro="arun">
+                                <h3><i class="fa-solid fa-id-card" aria-hidden="true"></i><span data-i18n="case.glance">Case at a Glance</span></h3>
+                                <p class="case-glance-lead">The entry names two people and describes identity-document scrutiny, but the available source note does not identify the underlying case record.</p>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.story">The Story</h4>
+                                    <p>The existing summary presents the Arun Bhelke and Kanchan Nanaware matter as an example involving disputed writings, signatures and identity-linked records. It suggests that document examination may assist an inquiry into whether records associated with different names or identities share a writer. That is a description of a possible forensic question, not enough on its own to establish that a particular examination or finding occurred.</p>
+                                    <p>No court, date, agency record, questioned document, laboratory report or identified set of known standards appears in the current source note. Accordingly, this introduction does not infer a finding about identity, aliases, authorship, or responsibility. Those issues would require a traceable primary source and careful separation of any investigative allegation from what a court actually decided.</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.forensicConnection">The Forensic Connection</h4>
+                                    <p>For identity-document examination, the document’s origin and integrity, the writing or signature being questioned, and the provenance and suitability of known standards all matter. Even a sound authorship opinion would address only a defined comparison question; it would not automatically resolve the broader question of a person’s identity or intent.</p>
+                                    <h4 data-i18n="case.keyQuestion">The Key Question</h4>
+                                    <p class="case-glance-question">What primary record identifies the questioned identity document and supports the reported handwriting or signature examination?</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyEntryMatters">Why This Entry Matters</h4>
+                                    <p>It highlights how questioned-document work can intersect with identity records, while making clear that a forensic comparison answers a limited question. The case-specific claim remains unverified until the underlying record is cited.</p>
+                                </div>
+                                <div class="case-snapshot">
+                                    <h4 class="case-snapshot-heading" data-i18n="case.snapshot">Case Snapshot</h4>
+                                    <dl>
+                                        <div><dt data-i18n="case.year">Year</dt><dd>Not established by the current entry</dd></div>
+                                        <div><dt data-i18n="case.court">Court</dt><dd>No case-specific judgment cited</dd></div>
+                                        <div><dt data-i18n="case.location">Location</dt><dd>Not specified in a linked primary source</dd></div>
+                                        <div><dt data-i18n="case.forensicArea">Forensic area</dt><dd>Handwriting, signatures and identity records, as described</dd></div>
+                                        <div><dt data-i18n="case.evidenceType">Evidence</dt><dd>Specific documents and comparison standards are not identified</dd></div>
+                                        <div><dt data-i18n="case.keyIssue">Key issue</dt><dd>Whether a sourced examination supports a defined comparison</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyRead">Why Read This Case?</h4>
+                                    <ul class="case-why-read">
+                                        <li>Understand what handwriting comparison can—and cannot—say about identity.</li>
+                                        <li>Check document integrity and specimen provenance before evaluating an opinion.</li>
+                                        <li>Notice when a case description needs a primary citation before it can support a conclusion.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <h3 class="case-analysis-title" data-i18n="case.detailedAnalysis">Detailed Case Analysis</h3>
+                            <dl>
+                                <div><dt>Background</dt><dd>Documented investigation-related materials refer to questioned writings and signatures appearing on records associated with different names or identities.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Could the disputed documents be associated with known writing or signature standards and what does that reveal about the identity record in question?</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Known writing and signatures, disputed identity documents and comparison material.</dd></div>
+                                <div><dt>Forensic significance</dt><dd>Document examination can assist investigations into disputed identity records, but the forensic finding must remain separate from judicial conclusions.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic insight:</strong> Questioned-document examination can assist investigations involving disputed identities, aliases and documentary records when suitable known standards are available.</p>
+                            <p class="case-insight-sources"><strong>Sources &amp; Further Reading:</strong> No case-specific investigative report, official record or judgment is identified in the current entry. The described document examination and any identity-related inference require a primary source before they can be verified.</p>
+                        </div>
+                    </article>
+
+                    <article class="case-insight-card" data-case-card data-category="documents authentication" data-case-name="Deepali Ganore Investigation">
+                        <div class="case-insight-summary">
+                            <p class="case-insight-meta"><span data-i18n="case.investigation">Investigation</span><span data-i18n="case.questionedWriting">Questioned writing</span></p>
+                            <h3>Deepali Ganore Investigation</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-file-signature mr-1" aria-hidden="true"></i><span data-i18n="case.areaQuestionedWriting">Questioned writing / handwriting comparison</span></p>
+                            <p class="case-insight-teaser" data-i18n="case.teaserDeepali">The case involved examination of an alleged handwritten message recovered during the investigation, with forensic comparison used as an investigative aid rather than a substitute for legal proof.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-deepali-details"><span data-i18n="case.read">Read Case Insight</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="case-insight-details" id="case-deepali-details" hidden>
+                            <section class="case-at-a-glance" data-case-intro="deepali">
+                                <h3><i class="fa-solid fa-file-signature" aria-hidden="true"></i><span data-i18n="case.glance">Case at a Glance</span></h3>
+                                <p class="case-glance-lead">A reported handwritten message could raise an authorship question; the current entry does not link a record that verifies the item or its examination.</p>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.story">The Story</h4>
+                                    <p>The Deepali Ganore entry describes an alleged handwritten message recovered during an investigation and says it was compared with known writings. Yet its source note identifies no report, court decision, or official document that establishes the message’s recovery, chain of custody, comparison samples, examiner, or result.</p>
+                                    <p>Because those details are not sourced here, this overview does not name an author, repeat a claimed match, or treat the message as proof of any allegation. It instead frames the questions a reader should ask before relying on such an account: was the original preserved, were suitable known writings available, was the comparison conducted by a qualified examiner, and how—if at all—was the opinion tested in proceedings?</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.forensicConnection">The Forensic Connection</h4>
+                                    <p>Handwriting comparison is a structured evaluation of similarities and differences across questioned and known material. The strength of an opinion depends on the quality and quantity of the writing, its provenance, natural variation and the limits acknowledged by the examiner. An investigative lead should not be collapsed into a final conclusion about authorship or guilt.</p>
+                                    <h4 data-i18n="case.keyQuestion">The Key Question</h4>
+                                    <p class="case-glance-question">Can a primary record establish the message’s provenance, the comparison material and the scope of any expert conclusion?</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyEntryMatters">Why This Entry Matters</h4>
+                                    <p>It illustrates why a dramatic or allegedly recovered note should be evaluated through documented collection and comparison—not assumption. Until a case-specific source is linked, its forensic details remain unverified on this page.</p>
+                                </div>
+                                <div class="case-snapshot">
+                                    <h4 class="case-snapshot-heading" data-i18n="case.snapshot">Case Snapshot</h4>
+                                    <dl>
+                                        <div><dt data-i18n="case.year">Year</dt><dd>Not established by the current entry</dd></div>
+                                        <div><dt data-i18n="case.court">Court</dt><dd>No case-specific judgment cited</dd></div>
+                                        <div><dt data-i18n="case.location">Location</dt><dd>Not specified in a linked primary source</dd></div>
+                                        <div><dt data-i18n="case.forensicArea">Forensic area</dt><dd>Questioned handwriting, as described in the entry</dd></div>
+                                        <div><dt data-i18n="case.evidenceType">Evidence</dt><dd>An alleged message; provenance and comparison material are not sourced here</dd></div>
+                                        <div><dt data-i18n="case.keyIssue">Key issue</dt><dd>Authenticity, suitability of standards and limits of attribution</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyRead">Why Read This Case?</h4>
+                                    <ul class="case-why-read">
+                                        <li>Follow chain of custody before considering authorship.</li>
+                                        <li>Ask whether comparison samples are adequate and properly attributed.</li>
+                                        <li>Keep an investigative lead distinct from expert proof and a court finding.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <h3 class="case-analysis-title" data-i18n="case.detailedAnalysis">Detailed Case Analysis</h3>
+                            <dl>
+                                <div><dt>Background</dt><dd>A handwritten message was recovered during the investigation and submitted for comparison with known writings.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Whether the questioned writing could be connected to a known author for investigative purposes.</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Questioned handwritten message and known writing samples used for comparison.</dd></div>
+                                <div><dt>Forensic significance</dt><dd>Questioned-document examination may function as a valuable investigative lead, but attribution requires systematic comparison with suitable known material and a clear understanding of evidentiary limits.</dd></div>
+                            </dl>
+                            <p class="case-insight-note"><strong>Forensic insight:</strong> A questioned writing recovered in an investigation may become an important lead, but attribution requires careful comparison and cannot be treated as proof in isolation.</p>
+                            <p class="case-insight-sources"><strong>Sources &amp; Further Reading:</strong> No case-specific investigative report, official record or judgment is identified in the current entry to verify the alleged message or handwriting comparison. A primary source is needed before attributing authorship or a forensic result.</p>
                         </div>
                     </article>
                 </div>
             </section>
 
             <section class="case-category" data-case-category="fingerprints" aria-labelledby="fingerprint-cases-heading">
-                <h2 class="case-category-heading" id="fingerprint-cases-heading"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i>Fingerprint Examination</h2>
+                <h2 class="case-category-heading" id="fingerprint-cases-heading"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i><span data-i18n="case.categoryFingerprints">Fingerprints</span></h2>
                 <div class="case-insight-grid">
-                    <article class="case-insight-card" data-case-card data-category="fingerprints" data-case-name="Francisca Rojas">
+                    <article class="case-insight-card" data-case-card data-category="documents fingerprints" data-case-name="Fingerprint evidence in Indian criminal proceedings">
                         <div class="case-insight-summary">
-                            <p class="case-insight-meta"><span>Argentina</span><span>1892</span></p>
-                            <h3>The Francisca Rojas Case</h3>
-                            <p class="case-insight-area"><i class="fa-solid fa-fingerprint mr-1" aria-hidden="true"></i>Latent fingerprint identification</p>
-                            <p class="case-insight-teaser">A bloody fingerprint in a double-murder investigation is widely cited as an early use of fingerprints to identify a suspect.</p>
-                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-rojas-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                            <p class="case-insight-meta"><span data-i18n="case.generalPrinciple">General principle</span><span data-i18n="case.indianContext">Indian procedural context</span></p>
+                            <h3>Fingerprint Evidence in Indian Criminal Proceedings</h3>
+                            <p class="case-insight-area"><i class="fa-solid fa-fingerprint mr-1" aria-hidden="true"></i><span data-i18n="case.areaFingerprints">Latent print / identification / expert evidence</span></p>
+                            <p class="case-insight-teaser" data-i18n="case.teaserFingerprints">Indian courts often assess fingerprint evidence in the context of other material on record, with special emphasis on the forensic methodology, chain of custody and independent verification.</p>
+                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-fingerprint-principles-details"><span data-i18n="case.read">Read Case Insight</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
                         </div>
-                        <div class="case-insight-details" id="case-rojas-details" hidden>
+                        <div class="case-insight-details" id="case-fingerprint-principles-details" hidden>
+                            <section class="case-at-a-glance" data-case-intro="fingerprints">
+                                <h3><i class="fa-solid fa-fingerprint" aria-hidden="true"></i><span data-i18n="case.glance">Case at a Glance</span></h3>
+                                <p class="case-glance-lead">This entry is a general overview, not a single named court case: it introduces how Indian proceedings may assess latent-print evidence and its context.</p>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.story">The Story</h4>
+                                    <p>Unlike the handwriting and signature entries above, this card does not identify one prosecution, judgment, accused, or crime-scene impression. It summarizes a forensic issue that arises across cases: whether a latent print recovered from an object or scene can be meaningfully compared with a known impression, and how that comparison fits with the rest of the evidence.</p>
+                                    <p>For a concrete further-reading example, the Bombay High Court’s 2015 decision in Sanjay @ Papdya @ Pawan @ Prashant @ Rahul and Others v. State of Maharashtra discusses a palm impression on an almirah in a dacoity investigation. That judgment is an illustration, not the case behind this general card, and its facts should not be substituted for an unspecified case.</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.forensicConnection">The Forensic Connection</h4>
+                                    <p>Examiners assess the quality and detail of a latent impression, its collection and preservation, the comparison material and the basis for any identification. A court also considers how the print was found, documented and linked to the alleged activity. Presence of a print can be relevant, but interpretation depends on circumstances; it does not by itself establish when or why a person touched an object.</p>
+                                    <h4 data-i18n="case.keyQuestion">The Key Question</h4>
+                                    <p class="case-glance-question">What does the impression and its context support—and what limits remain on the inference from a print identification?</p>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyOverview">Why Read This Overview?</h4>
+                                    <p>It offers a framework for considering impression quality, collection, comparison and context together, while distinguishing a general forensic discussion from the facts and findings of any one case.</p>
+                                </div>
+                                <div class="case-snapshot">
+                                    <h4 class="case-snapshot-heading" data-i18n="case.snapshot">Case Snapshot</h4>
+                                    <dl>
+                                        <div><dt data-i18n="case.year">Year</dt><dd>General overview; no single year</dd></div>
+                                        <div><dt data-i18n="case.court">Court</dt><dd>Indian criminal proceedings generally</dd></div>
+                                        <div><dt data-i18n="case.location">Location</dt><dd>India</dd></div>
+                                        <div><dt data-i18n="case.forensicArea">Forensic area</dt><dd>Latent fingerprint and palm-print comparison</dd></div>
+                                        <div><dt data-i18n="case.evidenceType">Evidence</dt><dd>Scene impressions, known prints and expert opinion</dd></div>
+                                        <div><dt data-i18n="case.keyIssue">Key issue</dt><dd>Identification, provenance and contextual interpretation</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="case-glance-section">
+                                    <h4 data-i18n="case.whyReadOverview">Why Read This Overview?</h4>
+                                    <ul class="case-why-read">
+                                        <li>Separate the comparison result from the inference about activity or guilt.</li>
+                                        <li>Consider impression quality, collection history and comparison basis.</li>
+                                        <li>Use the linked judgment as an example, not as the identity of this general entry.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <h3 class="case-analysis-title" data-i18n="case.detailedAnalysis">Detailed Case Analysis</h3>
                             <dl>
-                                <div><dt>Background</dt><dd>In Necochea, Argentina, Francisca Rojas’s two children were murdered. Rojas accused a neighbor; the investigation turned to a bloody impression at the scene.</dd></div>
-                                <div><dt>Forensic question</dt><dd>Whose finger made the bloody impression, and could it help identify the person responsible?</dd></div>
-                                <div><dt>Evidence examined</dt><dd>A bloody fingerprint associated with the scene and inked comparison prints. Historical accounts credit police official Eduardo Álvarez and the classification work of Juan Vucetich.</dd></div>
-                                <div><dt>Examination / methodology</dt><dd>The impression was compared with recorded fingerprints using Vucetich’s developing classification and comparison system, an early method in the history of fingerprint identification.</dd></div>
-                                <div><dt>Key findings</dt><dd>Accounts report that the print was identified as Rojas’s; she later confessed. The case is often called the first murder solved or first conviction through fingerprint evidence, though those descriptions and the exact legal role of the print are not always consistently reported.</dd></div>
-                                <div><dt>Role of forensic evidence</dt><dd>The fingerprint helped redirect suspicion toward Rojas and challenge her accusation. It should not be inflated into a claim that the print alone established every fact of the crime.</dd></div>
-                                <div><dt>Outcome / significance</dt><dd>The case is a landmark in the adoption of fingerprints for criminal identification, particularly in Argentina and the history of forensic identification.</dd></div>
+                                <div><dt>Background</dt><dd>Fingerprint evidence in Indian criminal matters is typically evaluated as part of the full evidentiary record, including crime-scene impressions, comparison prints and expert testimony.</dd></div>
+                                <div><dt>Forensic question</dt><dd>Whether a print or set of prints can be identified as belonging to a particular person and how the court should assess the expert opinion in context.</dd></div>
+                                <div><dt>Evidence examined</dt><dd>Crime-scene prints, ten-print or exemplar impressions, expert reports, and surrounding evidence relating to the incident.</dd></div>
+                                <div><dt>Forensic significance</dt><dd>Where properly collected and compared, fingerprint evidence may be highly probative. However, the strength of the conclusion depends on method, quality of the mark, chain of custody and the total evidence in the case.</dd></div>
                             </dl>
-                            <p class="case-insight-note"><strong>Forensic Insight:</strong> Preserve historical nuance: distinguish identification, confession, prosecution, and conviction, and document the comparison basis rather than repeating “first” claims without qualification.</p>
-                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://www.ojp.gov/pdffiles1/nij/225320.pdf" target="_blank" rel="noopener noreferrer">U.S. National Institute of Justice, <em>The Fingerprint Sourcebook</em></a>; <a href="https://www.hup.harvard.edu/books/9780674010004" target="_blank" rel="noopener noreferrer">Simon A. Cole, <em>Suspect Identities</em>, Harvard University Press</a>.</p>
-                        </div>
-                    </article>
-
-                    <article class="case-insight-card" data-case-card data-category="fingerprints" data-case-name="Will West William West">
-                        <div class="case-insight-summary">
-                            <p class="case-insight-meta"><span>United States</span><span>1903, commonly dated</span></p>
-                            <h3>The Will West / William West Story</h3>
-                            <p class="case-insight-area"><i class="fa-solid fa-address-card mr-1" aria-hidden="true"></i>Fingerprint identification · anthropometry</p>
-                            <p class="case-insight-teaser">A widely repeated prison-identification story contrasts two men’s similar appearance and Bertillon measurements with different fingerprints.</p>
-                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-west-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
-                        </div>
-                        <div class="case-insight-details" id="case-west-details" hidden>
-                            <dl>
-                                <div><dt>Background</dt><dd>The story concerns two Leavenworth prisoners, commonly identified as Will West and William West, whose names and physical measurements were reportedly very similar.</dd></div>
-                                <div><dt>Forensic question</dt><dd>Could an identification system distinguish the two records when names, appearance, and anthropometric measurements were alike?</dd></div>
-                                <div><dt>Evidence examined</dt><dd>Reported Bertillon measurements and the two men’s fingerprint records.</dd></div>
-                                <div><dt>Examination / methodology</dt><dd>The often-recounted account says the measurements were compared and fingerprints then used to distinguish the records. Later histories caution that popular versions simplify or vary in their details.</dd></div>
-                                <div><dt>Key findings</dt><dd>The fingerprint records were different, despite the reported similarity in measurements and appearance.</dd></div>
-                                <div><dt>Role of forensic evidence</dt><dd>The episode became an illustration of fingerprints as a more discriminating identification method than the particular anthropometric comparison in this anecdote—not proof that fingerprint identification is infallible.</dd></div>
-                                <div><dt>Outcome / significance</dt><dd>The story is associated with the transition toward fingerprint-based identification in institutions. Its details should be treated as a historical anecdote, not a fully documented modern case study.</dd></div>
-                            </dl>
-                            <p class="case-insight-note"><strong>Forensic Insight:</strong> No identification method is error-proof. Use suitable comparison material, quality controls, independent verification, and careful record management.</p>
-                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://www.ojp.gov/pdffiles1/nij/225320.pdf" target="_blank" rel="noopener noreferrer">U.S. National Institute of Justice, <em>The Fingerprint Sourcebook</em></a>; <a href="https://www.hup.harvard.edu/books/9780674010004" target="_blank" rel="noopener noreferrer">Simon A. Cole, <em>Suspect Identities</em>, Harvard University Press</a>.</p>
-                        </div>
-                    </article>
-
-                    <article class="case-insight-card" data-case-card data-category="fingerprints" data-case-name="Brandon Mayfield Madrid fingerprint">
-                        <div class="case-insight-summary">
-                            <p class="case-insight-meta"><span>United States / Spain</span><span>2004</span></p>
-                            <h3>The Brandon Mayfield Misidentification</h3>
-                            <p class="case-insight-area"><i class="fa-solid fa-fingerprint mr-1" aria-hidden="true"></i>Latent print comparison · verification and quality control</p>
-                            <p class="case-insight-teaser">The FBI withdrew its identification of an Oregon attorney after Spanish authorities disagreed about a latent print associated with the Madrid train bombings.</p>
-                            <button class="case-insight-toggle" type="button" data-case-toggle aria-expanded="false" aria-controls="case-mayfield-details">Read case <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
-                        </div>
-                        <div class="case-insight-details" id="case-mayfield-details" hidden>
-                            <dl>
-                                <div><dt>Background</dt><dd>After the March 2004 Madrid train bombings, investigators examined a latent print on a bag associated with bomb-making materials. Oregon attorney Brandon Mayfield, a U.S. citizen, became a candidate in the FBI comparison.</dd></div>
-                                <div><dt>Forensic question</dt><dd>Did the latent print originate from Mayfield?</dd></div>
-                                <div><dt>Evidence examined</dt><dd>A partial latent fingerprint and reference fingerprint records, including Mayfield’s prints and material available to Spanish authorities.</dd></div>
-                                <div><dt>Examination / methodology</dt><dd>FBI examiners made an identification, which underwent internal review. Spanish examiners disagreed; further investigation and review led the FBI to withdraw its identification. The U.S. Department of Justice Inspector General later examined the FBI’s handling of the matter.</dd></div>
-                                <div><dt>Key findings</dt><dd>The FBI’s identification of Mayfield was erroneous. The Inspector General identified process and judgment failures, including contextual influences and deficiencies in verification and review.</dd></div>
-                                <div><dt>Role of forensic evidence</dt><dd>The fingerprint association drove investigative attention and Mayfield’s arrest and detention. He was not convicted; the FBI acknowledged the error and apologized.</dd></div>
-                                <div><dt>Outcome / significance</dt><dd>Mayfield was released after the misidentification was corrected. The case prompted scrutiny of latent-print examination practices, independent verification, contextual bias, and quality assurance.</dd></div>
-                            </dl>
-                            <p class="case-insight-note"><strong>Forensic Insight:</strong> Examiners need context management, documented reasoning, independent verification, and a willingness to revisit an identification when conflicting evidence emerges.</p>
-                            <p class="case-insight-sources"><strong>Sources:</strong> <a href="https://oig.justice.gov/sites/default/files/archive/special/0504/final.pdf" target="_blank" rel="noopener noreferrer">U.S. Department of Justice Office of the Inspector General, <em>A Review of the FBI’s Handling of the Brandon Mayfield Case</em></a>.</p>
+                            <p class="case-insight-note"><strong>Forensic insight:</strong> Fingerprint evidence should be treated as a valuable tool within a broader evidentiary framework, not as an automatic determination of guilt.</p>
+                            <p class="case-insight-sources"><strong>Sources &amp; Further Reading:</strong> General discussion; not a case-specific judgment. For an example involving a palm impression on an almirah, see <a href="https://indiankanoon.org/doc/163662439/" target="_blank" rel="noopener noreferrer">Sanjay @ Papdya @ Pawan @ Prashant @ Rahul and Others v. State of Maharashtra, Bombay High Court, 17 February 2015</a>.</p>
                         </div>
                     </article>
                 </div>
             </section>
 
-            <p class="case-insights-empty" id="case-no-results" hidden>No matching cases found. Try another name or category.</p>
-            <p class="case-insight-note mb-12"><strong>Educational note:</strong> These summaries describe selected historical accounts and reported findings. They are not case opinions, and forensic methods and standards have changed over time.</p>
+            <p class="case-insights-empty" id="case-no-results" hidden data-i18n="case.noResults">No matching cases found. Try another name or category.</p>
+
+            <section class="case-category" aria-labelledby="what-these-cases-teach-us-heading">
+                <h2 class="case-category-heading" id="what-these-cases-teach-us-heading"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i><span data-i18n="case.lessonsHeading">What These Cases Teach Us</span></h2>
+                <div class="case-insight-grid">
+                    <article class="case-insight-card">
+                        <div class="case-insight-summary">
+                            <h3 data-i18n="case.lesson1Title">1. Comparison material matters</h3>
+                            <p class="case-insight-teaser" data-i18n="case.lesson1">Suitable known writing or signatures are fundamental to a meaningful comparison. Weak or unsuitable exemplars reduce the reliability of the conclusion.</p>
+                        </div>
+                    </article>
+                    <article class="case-insight-card">
+                        <div class="case-insight-summary">
+                            <h3 data-i18n="case.lesson2Title">2. Expert opinion is evidence, not an automatic conclusion</h3>
+                            <p class="case-insight-teaser" data-i18n="case.lesson2">Courts evaluate expert evidence along with the complete record rather than treating a forensic opinion as a direct verdict.</p>
+                        </div>
+                    </article>
+                    <article class="case-insight-card">
+                        <div class="case-insight-summary">
+                            <h3 data-i18n="case.lesson3Title">3. Document provenance matters</h3>
+                            <p class="case-insight-teaser" data-i18n="case.lesson3">Where a document came from and how it was obtained can be as important as the visible writing features themselves.</p>
+                        </div>
+                    </article>
+                    <article class="case-insight-card">
+                        <div class="case-insight-summary">
+                            <h3 data-i18n="case.lesson4Title">4. Scientific examination requires objectivity</h3>
+                            <p class="case-insight-teaser" data-i18n="case.lesson4">A professional examiner must assess both similarities and differences instead of searching only for confirming features.</p>
+                        </div>
+                    </article>
+                    <article class="case-insight-card">
+                        <div class="case-insight-summary">
+                            <h3 data-i18n="case.lesson5Title">5. Limitations must be communicated</h3>
+                            <p class="case-insight-teaser" data-i18n="case.lesson5">The strength and limits of the examination should be clearly explained so that the evidentiary value is understood in context.</p>
+                        </div>
+                    </article>
+                    <article class="case-insight-card">
+                        <div class="case-insight-summary">
+                            <h3 data-i18n="case.lesson6Title">6. Forensic evidence belongs in context</h3>
+                            <p class="case-insight-teaser" data-i18n="case.lesson6">Document and fingerprint evidence should be interpreted alongside circumstances, corroboration and the broader case record.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="case-insight-note mb-12">
+                <strong data-i18n="case.educationalDisclaimer">Educational Disclaimer:</strong> <span data-i18n="case.educationalDisclaimerCopy">These case studies are presented for educational and professional awareness purposes. They summarize publicly available judicial decisions and documented reports and should not be interpreted as legal advice, independent expert opinion, or a conclusion regarding the guilt or innocence of any person.</span>
+            </div>
         </div>
     </main>
+
+    <dialog class="case-details-modal" id="case-details-modal" aria-labelledby="case-modal-title">
+        <div class="case-details-panel">
+            <header class="case-details-header">
+                <div>
+                    <p class="eyebrow"><i class="fa-solid fa-magnifying-glass mr-2" aria-hidden="true"></i><span data-i18n="case.modalEyebrow">Case Insight</span></p>
+                    <h2 id="case-modal-title"></h2>
+                    <p class="case-details-meta" id="case-modal-meta"></p>
+                </div>
+                <button class="case-details-close" type="button" data-case-modal-close aria-label="Close case details" data-i18n-aria-label="case.closeDetails">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="case-details-content" id="case-modal-content" tabindex="0"></div>
+        </div>
+    </dialog>
 
     <!-- Footer -->
     <footer class="bg-navy-950 text-slate-400 text-xs border-t border-slate-800 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
             <div>
                 <span class="brand-name text-base font-bold text-white block mb-2">MRUNMAI S. VAIDYA</span>
-                <p class="text-slate-400 leading-relaxed mb-4">
-                    Independent examination of questioned documents, signatures, and fingerprints.
-                </p>
-                <div class="text-slate-500">Careful handling. Clear findings.</div>
+                <p class="text-slate-400 leading-relaxed mb-4" data-i18n="footer.summary">Independent examination of questioned documents, signatures, and fingerprints.</p>
+                <div class="text-slate-500" data-i18n="footer.tagline">Careful handling. Clear findings.</div>
             </div>
             <div>
-                <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Next steps</span>
-                <p class="text-slate-400 leading-relaxed mb-3">Tell us what you need examined. We’ll discuss the evidence, scope, and submission options.</p>
-                <a href="../contact/#intake" class="text-sky-400 hover:text-sky-300 font-semibold">Request an assessment <i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i></a>
+                <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3" data-i18n="footer.nextSteps">Next steps</span>
+                <p class="text-slate-400 leading-relaxed mb-3" data-i18n="footer.nextStepsCopy">Tell us what you need examined. We’ll discuss the evidence, scope, and submission options.</p>
+                <a href="../contact/#intake" class="text-sky-400 hover:text-sky-300 font-semibold"><span data-i18n="footer.assessment">Request an assessment</span><i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-6 border-t border-slate-800/80 text-center text-slate-400">
@@ -269,6 +687,7 @@
         </div>
     </footer>
 
+    <script src="../assets/translations.js" defer></script>
     <script src="../assets/site.js" defer></script>
 </body>
 </html>

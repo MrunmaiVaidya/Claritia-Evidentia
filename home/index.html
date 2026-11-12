@@ -49,26 +49,36 @@
                         <span class="brand-title mt-1 block text-xs text-slate-300">Forensic Document & Fingerprint Expert</span>
                     </span>
                 </a>
-                <nav aria-label="Main navigation" class="desktop-nav hidden xl:flex items-center gap-5 text-[11px] font-semibold">
-                    <a href="../home/" data-route="home" aria-current="page">Home</a>
-                    <a href="../about/" data-route="about">About Me</a>
-                    <a href="../services/" data-route="services">Services</a>
-                    <a href="../online-consultation/" data-route="online-consultation">Online Consultation</a>
-                    <a href="../case-insights/" data-route="case-insights">Case Insights</a>
-                    <a href="../contact/" data-route="contact">Contact</a>
+                <nav aria-label="Main navigation" data-i18n-aria-label="navigation.main" class="desktop-nav hidden xl:flex items-center gap-5 text-[11px] font-semibold">
+                    <a href="../home/" data-route="home" aria-current="page" data-i18n="nav.home">Home</a>
+                    <a href="../about/" data-route="about" data-i18n="nav.about">About Me</a>
+                    <a href="../services/" data-route="services" data-i18n="nav.services">Services</a>
+                    <a href="../online-consultation/" data-route="online-consultation" data-i18n="nav.consultation">Online Consultation</a>
+                    <a href="../case-insights/" data-route="case-insights" data-i18n="nav.caseInsights">Case Insights</a>
+                    <a href="../contact/" data-route="contact" data-i18n="nav.contact">Contact</a>
+                    <div class="language-switcher" role="group" data-i18n-aria-label="language.label">
+                        <button type="button" data-language="en" data-i18n-aria-label="language.selectEnglish" aria-pressed="true">EN</button>
+                        <button type="button" data-language="mr" data-i18n-aria-label="language.selectMarathi" aria-pressed="false">मराठी</button>
+                        <button type="button" data-language="hi" data-i18n-aria-label="language.selectHindi" aria-pressed="false">हिंदी</button>
+                    </div>
                 </nav>
                 <details class="mobile-menu relative xl:hidden">
                     <summary class="cursor-pointer rounded border border-slate-700 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500">
-                        <span class="sr-only">Open navigation menu</span>
+                        <span class="sr-only" data-i18n="nav.openMenu">Open navigation menu</span>
                         <i class="fa-solid fa-bars" aria-hidden="true"></i>
                     </summary>
-                    <nav aria-label="Mobile navigation" class="mobile-nav absolute right-0 top-full mt-3 w-60 rounded-lg border p-2 shadow-xl">
-                        <a href="../home/" data-route="home" aria-current="page" class="block rounded px-3 py-2.5 text-sm">Home</a>
-                        <a href="../about/" data-route="about" class="block rounded px-3 py-2.5 text-sm">About Me</a>
-                        <a href="../services/" data-route="services" class="block rounded px-3 py-2.5 text-sm">Services</a>
-                        <a href="../online-consultation/" data-route="online-consultation" class="block rounded px-3 py-2.5 text-sm">Online Consultation</a>
-                        <a href="../case-insights/" data-route="case-insights" class="block rounded px-3 py-2.5 text-sm">Case Insights</a>
-                        <a href="../contact/" data-route="contact" class="block rounded px-3 py-2.5 text-sm">Contact</a>
+                    <nav aria-label="Mobile navigation" data-i18n-aria-label="navigation.mobile" class="mobile-nav absolute right-0 top-full mt-3 w-60 rounded-lg border p-2 shadow-xl">
+                        <a href="../home/" data-route="home" aria-current="page" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.home">Home</a>
+                        <a href="../about/" data-route="about" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.about">About Me</a>
+                        <a href="../services/" data-route="services" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.services">Services</a>
+                        <a href="../online-consultation/" data-route="online-consultation" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.consultation">Online Consultation</a>
+                        <a href="../case-insights/" data-route="case-insights" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.caseInsights">Case Insights</a>
+                        <a href="../contact/" data-route="contact" class="block rounded px-3 py-2.5 text-sm" data-i18n="nav.contact">Contact</a>
+                        <div class="language-switcher language-switcher-mobile" role="group" data-i18n-aria-label="language.label">
+                            <button type="button" data-language="en" data-i18n-aria-label="language.selectEnglish" aria-pressed="true">EN</button>
+                            <button type="button" data-language="mr" data-i18n-aria-label="language.selectMarathi" aria-pressed="false">मराठी</button>
+                            <button type="button" data-language="hi" data-i18n-aria-label="language.selectHindi" aria-pressed="false">हिंदी</button>
+                        </div>
                     </nav>
                 </details>
             </div>
@@ -82,18 +92,18 @@
         <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
             <div class="hero-content">
             <div class="hero-copy max-w-3xl">
-                <p class="hero-kicker mb-5">Independent Forensic Expertise</p>
+                <p class="hero-kicker mb-5" data-i18n="home.kicker">Independent Forensic Expertise</p>
                 <h1 class="hero-name mb-5">Mrunmai S. Vaidya</h1>
                 <h2 class="hero-title mb-4">Forensic Document & Fingerprint Expert</h2>
                 <div class="hero-divider max-w-xl"></div>
-                <p class="mb-5 text-sm font-medium tracking-wide text-slate-200 sm:text-base">Independent Forensic Freelancer <span class="mx-2 text-slate-400">|</span> Online Advisor <span class="mx-2 text-slate-400">|</span> Consultant</p>
+                <p class="mb-5 text-sm font-medium tracking-wide text-slate-200 sm:text-base"><span data-i18n="home.roles">Independent Forensic Freelancer | Online Advisor | Consultant</span></p>
                 <p class="hero-tagline mb-7 max-w-xl text-center">
-                    “Scientific Examination. Professional Consultation.<br class="hidden sm:block"> Independent Forensic Expertise.”
+                    <span data-i18n="home.tagline">“Scientific Examination. Professional Consultation. Independent Forensic Expertise.”</span>
                 </p>
                 <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                    <a href="../services/" class="silver-button"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i> Explore my services <i class="fa-solid fa-chevron-right text-[.6rem]" aria-hidden="true"></i></a>
-                    <a href="../contact/#intake" class="silver-button silver-button-outline"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Book a consultation <i class="fa-solid fa-chevron-right text-[.6rem]" aria-hidden="true"></i></a>
-                    <a href="../contact/#intake" class="silver-button silver-button-outline"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Contact me <i class="fa-solid fa-chevron-right text-[.6rem]" aria-hidden="true"></i></a>
+                    <a href="../services/" class="silver-button"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span data-i18n="home.exploreServices">Explore my services</span><i class="fa-solid fa-chevron-right text-[.6rem]" aria-hidden="true"></i></a>
+                    <a href="../contact/#intake" class="silver-button silver-button-outline"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span data-i18n="home.bookConsultation">Book a consultation</span><i class="fa-solid fa-chevron-right text-[.6rem]" aria-hidden="true"></i></a>
+                    <a href="../contact/#intake" class="silver-button silver-button-outline"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span data-i18n="home.contactMe">Contact me</span><i class="fa-solid fa-chevron-right text-[.6rem]" aria-hidden="true"></i></a>
                 </div>
             </div>
             </div>
@@ -104,19 +114,19 @@
         <div class="mx-auto grid max-w-5xl grid-cols-2 px-4 sm:grid-cols-4">
             <div class="value-item flex min-h-16 items-center justify-center gap-3 px-3 py-4">
                 <i class="value-icon fa-solid fa-shield-halved" aria-hidden="true"></i>
-                <span class="font-serif text-xs uppercase tracking-wider text-slate-200">Accuracy</span>
+                <span class="font-serif text-xs uppercase tracking-wider text-slate-200" data-i18n="home.accuracy">Accuracy</span>
             </div>
             <div class="value-item flex min-h-16 items-center justify-center gap-3 px-3 py-4">
                 <i class="value-icon fa-solid fa-fingerprint" aria-hidden="true"></i>
-                <span class="font-serif text-xs uppercase tracking-wider text-slate-200">Integrity</span>
+                <span class="font-serif text-xs uppercase tracking-wider text-slate-200" data-i18n="home.integrity">Integrity</span>
             </div>
             <div class="value-item flex min-h-16 items-center justify-center gap-3 px-3 py-4">
                 <i class="value-icon fa-solid fa-microscope" aria-hidden="true"></i>
-                <span class="font-serif text-xs uppercase tracking-wider text-slate-200">Expertise</span>
+                <span class="font-serif text-xs uppercase tracking-wider text-slate-200" data-i18n="home.expertise">Expertise</span>
             </div>
             <div class="value-item flex min-h-16 items-center justify-center gap-3 px-3 py-4">
                 <i class="value-icon fa-solid fa-handshake" aria-hidden="true"></i>
-                <span class="font-serif text-xs uppercase tracking-wider text-slate-200">Confidentiality</span>
+                <span class="font-serif text-xs uppercase tracking-wider text-slate-200" data-i18n="home.confidentiality">Confidentiality</span>
             </div>
         </div>
     </section>
@@ -128,14 +138,14 @@
             <div>
                 <span class="brand-name text-base font-bold text-white block mb-2">MRUNMAI S. VAIDYA</span>
                 <p class="text-slate-400 leading-relaxed mb-4">
-                    Independent examination of questioned documents, signatures, and fingerprints.
+                    <span data-i18n="footer.summary">Independent examination of questioned documents, signatures, and fingerprints.</span>
                 </p>
-                <div class="text-slate-500">Careful handling. Clear findings.</div>
+                <div class="text-slate-500" data-i18n="footer.tagline">Careful handling. Clear findings.</div>
             </div>
             <div>
-                <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Next steps</span>
-                <p class="text-slate-400 leading-relaxed mb-3">Tell us what you need examined. We’ll discuss the evidence, scope, and submission options.</p>
-                <a href="../contact/#intake" class="text-sky-400 hover:text-sky-300 font-semibold">Request an assessment <i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i></a>
+                <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3" data-i18n="footer.nextSteps">Next steps</span>
+                <p class="text-slate-400 leading-relaxed mb-3" data-i18n="footer.nextStepsCopy">Tell us what you need examined. We’ll discuss the evidence, scope, and submission options.</p>
+                <a href="../contact/#intake" class="text-sky-400 hover:text-sky-300 font-semibold"><span data-i18n="footer.assessment">Request an assessment</span><i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-6 border-t border-slate-800/80 text-center text-slate-400">
@@ -143,6 +153,7 @@
         </div>
     </footer>
 
+    <script src="../assets/translations.js" defer></script>
     <script src="../assets/site.js" defer></script>
 </body>
 </html>
