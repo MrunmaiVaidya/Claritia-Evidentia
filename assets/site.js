@@ -470,6 +470,20 @@
 
     document.addEventListener("click", (event) => {
         if (!(event.target instanceof Element)) return;
+        const scrollTrigger = event.target.closest("a[data-scroll-target]");
+        if (scrollTrigger) {
+            const target = document.getElementById(scrollTrigger.dataset.scrollTarget);
+            if (target) {
+                event.preventDefault();
+                window.history.pushState(null, "", scrollTrigger.getAttribute("href"));
+                target.scrollIntoView({
+                    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+                    block: "start"
+                });
+                return;
+            }
+        }
+
         const link = event.target.closest("a[data-enquiry-service], a[data-enquiry-format]");
         if (link) {
             event.preventDefault();

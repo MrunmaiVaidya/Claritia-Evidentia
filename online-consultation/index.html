@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Independent forensic document and fingerprint expertise by Mrunmai S. Vaidya.">
-    <meta name="theme-color" content="#101216">
+    <meta name="theme-color" content="#0A101B">
     <title>Online Consultation | Mrunmai S. Vaidya</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,12 @@
                 extend: {
                     colors: {
                         navy: {
-                            800: '#22252B',
-                            900: '#17191E',
-                            950: '#101216'
+                            800: '#0A101B',
+                            900: '#0A101B',
+                            950: '#0A101B'
                         },
                         slate: {
-                            850: '#1E293B'
+                            850: '#0A101B'
                         },
                         accent: {
                             500: '#AEB4BD',
@@ -94,7 +94,28 @@
                     <h2 class="mb-4 text-3xl font-bold tracking-tight sm:text-4xl" data-i18n="consultation.heading">Expert guidance, wherever you are.</h2>
                     <p class="text-sm leading-7 text-slate-400" data-i18n="consultation.intro">Arrange a remote discussion to explain your concerns, understand what material may be relevant, and explore whether an examination or advisory engagement is appropriate. Please avoid sending sensitive evidence until a secure process has been agreed.</p>
                 </div>
-                <a href="../contact/#intake" class="silver-button whitespace-nowrap"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span data-i18n="consultation.cta">Request a consultation</span></a>
+                <a href="#submit-enquiry" data-scroll-target="submit-enquiry" class="silver-button whitespace-nowrap"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span data-i18n="consultation.cta">Request a consultation</span></a>
+            </div>
+        </div>
+    </section>
+
+<section id="guidelines" class="py-16 bg-slate-100 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="max-w-2xl">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-sky-100 text-sky-800 mb-3">
+                        <i class="fa-solid fa-box-open mr-1"></i><span data-i18n="contact.evidenceHandling">Evidence handling</span>
+                    </span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-2" data-i18n="contact.prepareEvidence">Preparing evidence for review</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        <span data-i18n="contact.evidenceGuidance">Handle original documents as little as possible and keep them in a clean, dry paper envelope. For digital review, provide a clear, uncompressed scan at 600 DPI or higher.</span>
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <a href="#intake" class="inline-flex items-center px-5 py-2.5 rounded bg-navy-900 hover:bg-navy-800 text-white text-xs font-semibold gap-2 shadow">
+                        <i class="fa-solid fa-box-open"></i><span data-i18n="contact.askSubmission">Ask about submission</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -124,6 +145,76 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contact" class="py-20 bg-gray-50">
+        <div id="intake" class="online-enquiry-wrapper contact-container mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="submit-enquiry" class="scroll-mt-24">
+            <form id="enquiry-form" action="https://formspree.io/f/xjywbqev" method="post" data-endpoint="https://formspree.io/f/xjywbqev" class="bg-white p-8 rounded-xl border border-gray-200 shadow-md space-y-6">
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                        <label for="enquiry-name" class="block text-xs font-bold text-slate-700 uppercase mb-1" data-i18n="form.name">Full name *</label>
+                        <input id="enquiry-name" name="name" type="text" required autocomplete="name" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="Your full name" data-i18n-placeholder="form.namePlaceholder">
+                    </div>
+                    <div>
+                        <label for="enquiry-email" class="block text-xs font-bold text-slate-700 uppercase mb-1" data-i18n="form.email">Email address *</label>
+                        <input id="enquiry-email" name="email" type="email" required autocomplete="email" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="you@example.com">
+                    </div>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                        <label for="enquiry-phone" class="block text-xs font-bold text-slate-700 uppercase mb-1" data-i18n="form.phone">Contact number *</label>
+                        <input id="enquiry-phone" name="phone" type="tel" required autocomplete="tel" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="+91 98765 43210">
+                    </div>
+                    <div>
+                        <label for="enquiry-country" class="block text-xs font-bold text-slate-700 uppercase mb-1" data-i18n="form.country">Country *</label>
+                        <input id="enquiry-country" name="country" type="text" required autocomplete="country-name" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="Your country" data-i18n-placeholder="form.countryPlaceholder">
+                    </div>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                    <label for="enquiry-service" class="block text-xs font-bold text-slate-700 uppercase mb-1" data-i18n="form.service">Service required *</label>
+                        <select id="enquiry-service" name="service" required class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none bg-white">
+                        <option value="" selected disabled data-i18n="form.selectService">Select a service</option>
+                        <option value="Handwriting &amp; Signature Examination" data-i18n="services.handwriting.title">Handwriting &amp; Signature Examination</option>
+                        <option value="Fingerprint Examination &amp; Comparison" data-i18n="services.fingerprints.title">Fingerprint Examination &amp; Comparison</option>
+                        <option value="Forensic Consultation" data-i18n="services.consultation.title">Forensic Consultation</option>
+                        <option value="Police Clearance Certificate Assistance" data-i18n="form.pccService">Police Clearance Certificate Assistance</option>
+                        <option value="International Fingerprint Card Assistance" data-i18n="form.cardService">International Fingerprint Card Assistance</option>
+                        </select>
+                    </div>
+                <div>
+                    <label for="enquiry-language" class="block text-xs font-bold text-slate-700 uppercase mb-1" data-i18n="form.preferredLanguage">Preferred Language</label>
+                    <select id="enquiry-language" name="preferred_language" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none bg-white">
+                        <option value="en" data-i18n="language.english">English</option>
+                        <option value="mr" data-i18n="language.marathi">Marathi</option>
+                        <option value="hi" data-i18n="language.hindi">Hindi</option>
+                    </select>
+                </div>
+                    <div id="format-field" hidden>
+                    <label for="enquiry-format" class="block text-xs font-bold text-slate-700 uppercase mb-1" data-i18n="form.cardFormat">Fingerprint card format</label>
+                        <select id="enquiry-format" name="fingerprint_card_format" class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none bg-white">
+                        <option value="" data-i18n="form.selectFormat">Select a format, if applicable</option>
+                            <option>FBI FD-258</option>
+                            <option>FBI FD-1164</option>
+                            <option>SF-87</option>
+                            <option>RCMP C-216C</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="enquiry-message" class="block text-xs font-bold text-slate-700 uppercase mb-1" data-i18n="form.message">Brief description of enquiry *</label>
+                    <textarea id="enquiry-message" name="message" rows="4" required class="w-full px-3 py-2 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="Briefly describe the service or guidance you are seeking. Please do not include sensitive evidence at this stage." data-i18n-placeholder="form.messagePlaceholder"></textarea>
+                    <p class="mt-2 text-xs text-slate-400" data-i18n="form.privacyNote">Please do not send sensitive evidence or identity documents until a secure process has been agreed.</p>
+                </div>
+                <p id="enquiry-status" class="enquiry-status" role="status" aria-live="polite"></p>
+                <p id="enquiry-connection-note" class="text-xs text-slate-400" data-i18n="form.connectionNote">Your enquiry will be sent through Formspree.</p>
+                <button type="submit" class="w-full py-3 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded shadow transition text-sm" data-i18n="form.submit">
+                    Submit enquiry
+                </button>
+            </form>
             </div>
         </div>
     </section>
